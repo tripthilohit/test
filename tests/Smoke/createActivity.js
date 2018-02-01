@@ -261,7 +261,6 @@ module.exports = {
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/missionLogicSaved.png')
     .assert.visible("//button[@class='btn btn-default pull-right test-hub-logic-save']")
     .pause(5000)
-   console.log('Activity creation Passed');
   }
 
 

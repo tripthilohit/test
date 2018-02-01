@@ -24,7 +24,6 @@ module.exports = {
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginConfirm.png')
     .pause(2000)
-    console.log('Sign in via Email Passed');
   }
 
 

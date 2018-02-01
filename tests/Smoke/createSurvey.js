@@ -272,7 +272,6 @@ var missionLogic =  function(driver)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/missionLogicSaved.png')
     .assert.visible("//button[@class='btn btn-default pull-right test-hub-logic-save']")
     .pause(2000)
-    console.log('Creation of survey Passed');
   }
 module.exports={
   signIn: signIn,

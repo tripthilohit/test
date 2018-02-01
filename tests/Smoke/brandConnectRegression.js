@@ -138,7 +138,6 @@ var memberComment = function(driver)
     //submit
     .click("(//a[@class='btn btn-color btn-md bconnect-new-post-submit btn-forum btn-forum-invert'])[1]")
     .pause(2000)
-    console.log('Brand connect Regression passed');
 }
 
 

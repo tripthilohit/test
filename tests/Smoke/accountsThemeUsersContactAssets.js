@@ -427,7 +427,6 @@ var signIn =  function(driver)
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyAdminReceivesContactUsEmail.png')
     .pause(2000)
-    console.log('Setting up accounts theme users and admin resriction Passed');
   }
 
 module.exports={

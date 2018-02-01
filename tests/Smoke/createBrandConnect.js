@@ -108,7 +108,6 @@ var createBrandConnectDiscussion = function(driver)
     .pause(3000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyBrandConnectCreation.png')
     .pause(1000)
-    console.log('Creating Brand connect Passed');
 }
 module.exports={
   signIn: signIn,
