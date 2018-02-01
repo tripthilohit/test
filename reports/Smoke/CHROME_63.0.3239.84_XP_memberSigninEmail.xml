@@ -5,9 +5,9 @@
 
   <testsuite name="smoke.memberSigninEmail"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="1" time="33.88" timestamp="Thu, 01 Feb 2018 21:54:06 GMT">
+    tests="1" time="28.43" timestamp="Thu, 01 Feb 2018 23:01:31 GMT">
   
-    <testcase name="Sign in via email using template 1" classname="smoke.memberSigninEmail" time="33.88" assertions="1">
+    <testcase name="Sign in via email" classname="smoke.memberSigninEmail" time="28.43" assertions="1">
 
     
     </testcase>

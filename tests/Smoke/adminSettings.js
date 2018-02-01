@@ -344,7 +344,7 @@ var saveSettings =  function(driver)
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/savedAdminSettings.png')
     .pause(1000)
-    .end();
+    console.log('Admn settings passed');
   }
 module.exports={
   signIn: signIn,

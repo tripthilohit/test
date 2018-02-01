@@ -39,6 +39,7 @@ module.exports = {
     });
   },
   userNames: userNames,
+  
   afterEach : function(done) {
     console.log('Closing Down Tunnel');
     cbt.stop();

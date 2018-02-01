@@ -1,5 +1,5 @@
 module.exports = {
-  'Sign in via email using template 1' : function(driver)
+  'Sign in via email' : function(driver)
   {
     driver
     .url(driver.globals.userNames.memberURL)
@@ -24,7 +24,7 @@ module.exports = {
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginConfirm.png')
     .pause(2000)
-    .end();
+    console.log('Sign in via Email Passed');
   }
 
 
