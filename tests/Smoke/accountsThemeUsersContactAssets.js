@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var downloadImages = function(driver)
 {
     driver
@@ -20,10 +19,7 @@ var downloadImages = function(driver)
 
 
 }
-=======
-#####Test
 
->>>>>>> d37a114e4926395223f0f8a811cfcafd250cc1a3
 var signIn =  function(driver)
   {
     driver
