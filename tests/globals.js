@@ -1,5 +1,6 @@
 var userNames = {
-  memberURL: 'https://tripsprint95y.staging.socialmedialink.com',
+  
+  memberURL: 'https://sul.staging.socialmedialink.com/',
   memberEmail: 'sansa@yopmail.com',
   memberPassword: '12345678',
   memberFirstName: 'first',
@@ -8,11 +9,11 @@ var userNames = {
   birthDay: '10/10/1991',
   sprint: '95y',
   adminURL: 'https://admin.staging.socialmedialink.com',
-  adminEmail: 'tripsprint95y@yopmail.com',
+  adminEmail: 'suli@yopmail.com',
   adminPassword: 'General123$',
-  facebookEmail: 'kqqdfbv_alisonsen_1454598705@tfbnw.net',
+  facebookEmail: 'sukada.testmember8@socialmedialink.com',
   facebookPass: 'general1234',
-  twitterEmail: 'tripthi.testmember15@socialmedialink.com',
+  twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
   twitterPass: 'general1234',
   instagramUserName: 'tripthi.shetty',
   instagramPass: 'abcd1234',
@@ -28,8 +29,8 @@ module.exports = {
   beforeEach : function(done) {
     console.log('Starting up tunnel');
     cbt.start({
-      'username': 'tripthi.shetty@socialmedialink.com',
-      'authkey': 'u283c7d7d4fafeb7'
+      'username': 'sukada.ramakrishna@socialmedialink.com',
+      'authkey': 'u89e4efd851e17e7'
     }, function(err, data) {
       if (err) {
         done(err);
