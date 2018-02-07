@@ -19,7 +19,7 @@ var userNames = {
   superAdminEmail: 'tripthi.testmember3@socialmedialink.com',
   superAdminPass: 'General123$',
   account_no: 667,
-  path: './/Users//tripthi//Documents//images//scriptImages//'
+  path: 'C:/Users/you/Downloads/'
 };
 
 var cbt = require('cbt_tunnels');

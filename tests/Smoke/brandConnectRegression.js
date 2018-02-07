@@ -1,9 +1,29 @@
+var downloadImages = function(driver)
+{
+    driver
+    .url("https://burst.shopify.com/")
+    .pause(3000)
+    .waitForElementVisible('body', 1000)
+    .useXpath()
+    //download survey badge
+    .pause(2000)
+    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
+    .pause(1000)
+    .keys(driver.Keys.ENTER)
+    .pause(3000)
+    .click("(//div[@class='grid '])[1]/div[2]/div[2]")
+    .pause(2000)
+    .click("//label[@for='photo_download_quality_standard']")
+    .pause(2000)
+    .click("//button[@data-ga-action='Download']")
+    .pause(4000)
+}
 var signIn =  function(driver)
   {
     driver
     .url(driver.globals.userNames.memberURL)
     .windowMaximize("current")
-    .waitForElementVisible('body', 2000)
+    //.waitForElementVisible('body', 2000)
     .useXpath()
     .click("(//a[contains(text(), 'Login')])[2]")
     .pause(1000)
@@ -32,7 +52,7 @@ var createBrandConnectTopic = function(driver)
     .click("//a[@href='/brand_connect/topics/new']")
     .pause(3000)
     //Upload brand connect topic image
-    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "topicImage.jpeg")
+    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "beach-pals_925x.jpg")
     .pause(2000)
     //add topic title
     .click("//input[@id='topic_title']")
@@ -94,7 +114,7 @@ var memberSignIn = function(driver)
     driver
     .url(driver.globals.userNames.memberURL)
     .windowMaximize("current")
-    .waitForElementVisible('body', 2000)
+    //.waitForElementVisible('body', 2000)
     .useXpath()
     .click("(//a[contains(text(), 'Login')])[2]")
     .pause(1000)
@@ -131,7 +151,7 @@ var memberComment = function(driver)
     .setValue("(//textarea[@ng-model='comment.text'])[1]","comment 1")
     .pause(500)
     //upload picture
-    .setValue("//div[@class='bconnect-new-post-attach']/input", driver.globals.userNames.path + "brandConnectMemberImage.jpeg")
+    .setValue("//div[@class='bconnect-new-post-attach']/input", driver.globals.userNames.path + "beach-pals_925x.jpg")
     .pause(2000)
     //scroll
     .execute('scrollTo(2000,2000)')
@@ -142,10 +162,11 @@ var memberComment = function(driver)
 
 
 module.exports={
-  //signIn: signIn,
-//createBrandConnectTopic: createBrandConnectTopic,
-//createBrandConnectDiscussion: createBrandConnectDiscussion,
-//adminComment: adminComment,
+    downloadImages: downloadImages,
+  signIn: signIn,
+createBrandConnectTopic: createBrandConnectTopic,
+createBrandConnectDiscussion: createBrandConnectDiscussion,
+adminComment: adminComment,
 memberSignIn: memberSignIn,
 memberComment: memberComment
 }
