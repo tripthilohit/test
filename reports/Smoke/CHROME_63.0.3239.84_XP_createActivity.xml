@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="14" 
+            failures="1" 
+            tests="1"> 
+ 
+  <testsuite name="Smoke.createActivity" 
+    errors="14" failures="1" hostname="" id="" package="Smoke" skipped="0" 
+    tests="1" time="415.4" timestamp="Tue, 06 Feb 2018 20:41:15 GMT"> 
+   
+    <testcase name="Creating an activity" classname="Smoke.createActivity" time="415.4" assertions="4"> 
+ 
+     
+ 
+     
+ 
+      <failure message="Testing if element &lt;//button[@class='btn btn-default pull-right test-hub-logic-save']&gt; is visible. Element could not be located.">    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:262:13)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure> 
+ 
+     
+    </testcase> 
+   
+ 
+   
+    <system-err> 
+      ERROR: Unable to locate element: &quot;//a[@class='mlogic-link test-hub-logic-item-view ng-scope']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:233:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@id='date-start']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:237:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//td[@class='active day']/preceding-sibling::td[@class='day'][1]&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:239:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@class='mlogic-add-group']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:241:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//span[text()='All Members']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:243:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@class='btn btn-primary test-hub-logic-item-group-save']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:245:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//span[@class='control-checkbox control-checkbox-dark'])[1]&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:247:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//label[@class='control-checkbox control-checkbox-primary'])[1]&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:249:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//label[@class='control-checkbox control-checkbox-primary'])[2]&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:251:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@class='form-control ng-pristine ng-valid ng-valid-number']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:253:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@class='form-control ng-pristine ng-valid ng-valid-number']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:255:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//label[@class='switcher ng-scope']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:257:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@class='btn btn-default pull-right test-hub-logic-save']&quot; using: xpath
+    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\createActivity.js:259:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@class='btn btn-default pull-right test-hub-logic-save']&quot; using: xpath
+    at command (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\api\assertions\visible.js:42:21)
+    at module.exports.BaseAssertion._scheduleAssertion (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\assertion.js:87:17)
+    at module.exports.BaseAssertion._executeCommand (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\assertion.js:82:17)
+    at AssertionInstance.commandFn [as _commandFn] (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\assertion.js:180:21)
+    at AsyncTree.runCommand (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:154:30)
+    at AsyncTree.runChildNode (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:114:8)
+    at AsyncTree.walkDown (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:80:10)
+    at AsyncTree.walkUp (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:97:8)
+    at AsyncTree.walkDown (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:90:12)
+    at AsyncTree.walkUp (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:97:8)
+    at AsyncTree.walkDown (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:90:12)
+    at AsyncTree.traverse (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:73:8) 
+    </system-err> 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 
