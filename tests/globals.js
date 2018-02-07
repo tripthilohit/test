@@ -1,12 +1,13 @@
 var userNames = {
+  
   memberURL: 'https://sul.staging.socialmedialink.com/',
-  memberEmail: 'mark@yopmail.com',
+  memberEmail: 'sansa@yopmail.com',
   memberPassword: '12345678',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
-  sprint: '95t',
+  sprint: '95y',
   adminURL: 'https://admin.staging.socialmedialink.com',
   adminEmail: 'suli@yopmail.com',
   adminPassword: 'General123$',

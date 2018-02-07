@@ -1,4 +1,24 @@
-#####Test
+var downloadImages = function(driver)
+{
+    driver
+    .url("https://www.google.com/")
+    .click("//input[@id='lst-ib']")
+    .pause(1000)
+    .setValue("//input[@id='lst-ib']", "flower")
+    .pause(1000)
+    .keys(driver.Keys.ENTER)
+    .pause(3000)
+    .click("(//div[@class='hdtb-mitem hdtb-imb'])[1]")
+    .pause(2000)
+    .click("(//img[@name='KCDUQw8oPqDM6M:'])[1]")
+    .pause(1000)
+    .mouseButtonClick('right')
+    .pause(1000)
+    .mouseButtonDown(7)
+    .pause(500)
+
+
+}
 
 var signIn =  function(driver)
   {
@@ -35,7 +55,8 @@ var signIn =  function(driver)
     //click edit
     .click("//button[@class='btn btn-default pull-right']")
     //Upload account logo
-    .setValue("//input[@id='account-logo']", driver.globals.userNames.path + "adminAccountLogo.png")
+    //.uploadLocalFile(driver.globals.userNames.path + 'adminAccountLogo.png', "//input[@id='account-logo']" )
+    .setValue("//input[@id='account-logo']", driver.globals.userNames.path + 'adminAccountLogo.png')
     .pause(1000)
     .click("//textarea[@ng-model='edited_account.name']")
     .clearValue("//textarea[@ng-model='edited_account.name']")
@@ -432,13 +453,14 @@ var signIn =  function(driver)
   }
 
 module.exports={
-  signIn: signIn,
-accounts: accounts,
-theme: theme,
-users: users,
-confirmAdminusers: confirmAdminusers,
-contactInfo: contactInfo,
-assets: assets,
-verifyAdminLevelRestrictions: verifyAdminLevelRestrictions,
-memberSideVerify: memberSideVerify
+    downloadImages: downloadImages,
+  //signIn: signIn,
+//accounts: accounts,
+//theme: theme,
+//users: users,
+//confirmAdminusers: confirmAdminusers,
+//contactInfo: contactInfo,
+//assets: assets,
+//verifyAdminLevelRestrictions: verifyAdminLevelRestrictions,
+//memberSideVerify: memberSideVerify
 }
