@@ -1,466 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="38"
+<testsuites errors="4"
             failures="0"
             tests="10">
 
   <testsuite name="smoke.accountsThemeUsersContactAssets"
-    errors="38" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="10" time="532.0" timestamp="Wed, 07 Feb 2018 20:19:14 GMT">
+    errors="4" failures="0" hostname="" id="" package="smoke" skipped="0"
+    tests="10" time="545.1" timestamp="Fri, 09 Feb 2018 18:12:38 GMT">
   
-    <testcase name="downloadImages" classname="smoke.accountsThemeUsersContactAssets" time="89.86" assertions="1">
+    <testcase name="downloadImages" classname="smoke.accountsThemeUsersContactAssets" time="80.00" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.accountsThemeUsersContactAssets" time="28.42" assertions="1">
+    <testcase name="signIn" classname="smoke.accountsThemeUsersContactAssets" time="21.04" assertions="1">
 
     
     </testcase>
   
-    <testcase name="accounts" classname="smoke.accountsThemeUsersContactAssets" time="18.42" assertions="0">
+    <testcase name="accounts" classname="smoke.accountsThemeUsersContactAssets" time="16.75" assertions="0">
     </testcase>
   
-    <testcase name="theme" classname="smoke.accountsThemeUsersContactAssets" time="43.01" assertions="0">
+    <testcase name="theme" classname="smoke.accountsThemeUsersContactAssets" time="35.94" assertions="0">
     </testcase>
   
-    <testcase name="users" classname="smoke.accountsThemeUsersContactAssets" time="26.64" assertions="0">
+    <testcase name="users" classname="smoke.accountsThemeUsersContactAssets" time="22.85" assertions="0">
     </testcase>
   
-    <testcase name="confirmAdminusers" classname="smoke.accountsThemeUsersContactAssets" time="98.54" assertions="0">
+    <testcase name="confirmAdminusers" classname="smoke.accountsThemeUsersContactAssets" time="114.8" assertions="0">
     </testcase>
   
-    <testcase name="contactInfo" classname="smoke.accountsThemeUsersContactAssets" time="8.068" assertions="0">
+    <testcase name="contactInfo" classname="smoke.accountsThemeUsersContactAssets" time="8.688" assertions="0">
     </testcase>
   
-    <testcase name="assets" classname="smoke.accountsThemeUsersContactAssets" time="39.25" assertions="0">
+    <testcase name="assets" classname="smoke.accountsThemeUsersContactAssets" time="64.48" assertions="0">
     </testcase>
   
-    <testcase name="verifyAdminLevelRestrictions" classname="smoke.accountsThemeUsersContactAssets" time="78.26" assertions="0">
+    <testcase name="verifyAdminLevelRestrictions" classname="smoke.accountsThemeUsersContactAssets" time="67.62" assertions="0">
     </testcase>
   
-    <testcase name="memberSideVerify" classname="smoke.accountsThemeUsersContactAssets" time="101.5" assertions="0">
+    <testcase name="memberSideVerify" classname="smoke.accountsThemeUsersContactAssets" time="112.9" assertions="0">
     </testcase>
   
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;(//a[@class='test-nav-config'])[2]&quot; using: xpath
-    at Object.confirmAdminusers (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:251:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//div[@class='tabs-navbar']/a[5]&quot; using: xpath
-    at Object.confirmAdminusers (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:254:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//div[@class='tabs-navbar']/a[6]&quot; using: xpath
-    at Object.contactInfo (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:264:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//textarea[@id='account_contact_address']&quot; using: xpath
-    at Object.contactInfo (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:267:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//textarea[@id='account_contact_address']&quot; using: xpath
-    at Object.contactInfo (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:268:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//textarea[@id='account_contact_address']&quot; using: xpath
-    at Object.contactInfo (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:269:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//input[@type='submit']&quot; using: xpath
-    at Object.contactInfo (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:271:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//div[@class='tabs-navbar']/a[7]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:279:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:282:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:283:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:284:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:286:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:287:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[1]&quot; using: xpath
+      ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; using: xpath
     at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:288:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:290:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:293:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:294:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:295:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at process._tickCallback (internal/process/next_tick.js:150:11)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:297:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:298:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[2]&quot; using: xpath
     at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:299:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:301:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:304:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:305:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:306:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at process._tickCallback (internal/process/next_tick.js:150:11)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:308:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:309:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[3]&quot; using: xpath
     at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:310:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:312:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:315:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:316:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:317:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at process._tickCallback (internal/process/next_tick.js:150:11)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:319:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:320:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[4]&quot; using: xpath
     at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:321:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:323:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;#/footer/disclosure'])[1]&quot; using: xpath
-    at Object.memberSideVerify (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:416:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//i[@class='fa fa-times dialog-close'])[3]&quot; using: xpath
-    at Object.memberSideVerify (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:419:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at process._tickCallback (internal/process/next_tick.js:150:11)
     </system-err>
   
