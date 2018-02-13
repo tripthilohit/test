@@ -1,10 +1,10 @@
-module.exports = {
-  'Sign in via email' : function(driver)
-  {
+
+var signinEmail = function(driver)
+{
     driver
     .url(driver.globals.userNames.memberURL)
     .windowMaximize("current")
-    .waitForElementVisible('body', 2000)
+    //.waitForElementVisible('body', 2000)
     .useXpath()
     .click("(//a[contains(text(), 'Login')])[2]")
     .pause(1000)
@@ -24,7 +24,11 @@ module.exports = {
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginConfirm.png')
     .pause(2000)
-  }
+}
+module.exports = {
+  
+    signinEmail: signinEmail
+
 
 
 }

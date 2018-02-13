@@ -271,10 +271,14 @@ var addDataSet2 = function(driver)
     .pause(500)
     .clearValue("//div[@class='col-md-4'][2]/div[4]/div/div[3]/div[2]/div/div[2]/input")
     .setValue("//div[@class='col-md-4'][2]/div[4]/div/div[3]/div[2]/div/div[2]/input", "FAQ")
-    .pause(1000)
+    .pause(2000)
     //enable user discussions
+    .click("//div[@class='col-md-4'][2]/div[5]/div/div[1]/div[2]/div/div[2]/span/input")
+    .pause(2000)
+    //enable admin moderation
     .click("//div[@class='col-md-4'][2]/div[5]/div/div[2]/div[2]/div/div[2]/span/input")
-    .pause(500)
+    .pause(2000)
+
    
 }
 var addDataSet3 =function(driver)

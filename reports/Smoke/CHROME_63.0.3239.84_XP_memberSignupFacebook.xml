@@ -3,11 +3,13 @@
             failures="0"
             tests="1">
 
-  <testsuite name="smoke.memberSigninEmail"
+  <testsuite name="smoke.memberSignupFacebook"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="1" time="43.42" timestamp="Tue, 13 Feb 2018 19:53:05 GMT">
+    tests="1" time="50.40" timestamp="Fri, 09 Feb 2018 18:23:45 GMT">
   
-    <testcase name="signinEmail" classname="smoke.memberSigninEmail" time="43.42" assertions="0">
+    <testcase name="Signing up via Facebook" classname="smoke.memberSignupFacebook" time="50.40" assertions="1">
+
+    
     </testcase>
   
 
