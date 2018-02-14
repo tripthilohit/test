@@ -1,28 +1,369 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
-<testsuites errors="0" 
-            failures="0" 
-            tests="3"> 
+<testsuites errors="30" 
+            failures="1" 
+            tests="4"> 
  
   <testsuite name="smoke.downloadAnalytics" 
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
-    tests="3" time="87.32" timestamp="Wed, 07 Feb 2018 21:01:33 GMT"> 
+    errors="30" failures="1" hostname="" id="" package="smoke" skipped="0" 
+    tests="4" time="180.6" timestamp="Tue, 13 Feb 2018 16:18:27 GMT"> 
    
-    <testcase name="adminlogin" classname="smoke.downloadAnalytics" time="33.31" assertions="2"> 
- 
-     
- 
-     
-    </testcase> 
-   
-    <testcase name="activityMonitoring" classname="smoke.downloadAnalytics" time="38.50" assertions="0"> 
-    </testcase> 
-   
-    <testcase name="downloadAnalytics" classname="smoke.downloadAnalytics" time="15.51" assertions="1"> 
+    <testcase name="downloadImages" classname="smoke.downloadAnalytics" time="31.84" assertions="1"> 
  
      
     </testcase> 
    
+    <testcase name="adminlogin" classname="smoke.downloadAnalytics" time="23.19" assertions="1"> 
  
+     
+    </testcase> 
+   
+    <testcase name="OverviewTab" classname="smoke.downloadAnalytics" time="7.463" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="downloadAnalytics" classname="smoke.downloadAnalytics" time="118.1" assertions="2"> 
+ 
+      <failure message="Timed out while waiting for element &lt;//ul[@id='ui-id-3']/li/a&gt; to be present for 2000 milliseconds.">    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:189:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure> 
+ 
+     
+    </testcase> 
+   
+ 
+   
+    <system-err> 
+      ERROR: Unable to locate element: &quot;//a[@class=' test-hub-nav-overview']&quot; using: xpath
+    at Object.OverviewTab (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:90:4)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@id='switch_cb_ctrl.report.benchmarks_enabled']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:130:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.third_party.shared_links_clicked']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:132:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.third_party.shared_links_clicked']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:134:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.third_party.mission_impression']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:136:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.third_party.mission_impression']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:138:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.benchmarks.shares_count']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:140:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.benchmarks.shares_count']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:142:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.benchmarks.shared_links_clicked']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:144:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.benchmarks.shared_links_clicked']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:146:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.benchmarks.mission_impression']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:148:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.benchmarks.mission_impression']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:150:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//button[@class='btn btn-sidebar btn-primary w100 test-activity-save'])[1]&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:152:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@ng-click='ctrl.open()']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:154:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//label[@class='ng-binding'])[1]&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:156:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//label[@class='ng-binding'])[2]&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:158:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@ng-click='ok()']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:160:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.mission_highlights.heading']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:162:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.mission_highlights.heading']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:164:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//div[@data-placeholder='Mission Highlights']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:166:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//div[@data-placeholder='Mission Highlights']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:168:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.mission_highlights.hashtag']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:170:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='report.mission_highlights.hashtag']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:172:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='ctrl.new_milestone.title']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:174:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='ctrl.new_milestone.title']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:176:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='ctrl.new_milestone.date']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:178:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//td[@class='day'])[12]&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:181:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//button[@ng-click='ctrl.add()']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:183:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='shareId']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:185:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//input[@ng-model='shareId']&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:187:6)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7) 
+    </system-err> 
    
  
    

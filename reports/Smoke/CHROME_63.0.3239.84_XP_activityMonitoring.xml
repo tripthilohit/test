@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="1" 
+            tests="3"> 
+ 
+  <testsuite name="smoke.activityMonitoring" 
+    errors="0" failures="1" hostname="" id="" package="smoke" skipped="0" 
+    tests="3" time="65.33" timestamp="Wed, 14 Feb 2018 19:44:50 GMT"> 
+   
+    <testcase name="adminlogin" classname="smoke.activityMonitoring" time="31.45" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="activityMonitoring" classname="smoke.activityMonitoring" time="14.24" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="activityMonitoringFilters" classname="smoke.activityMonitoring" time="19.64" assertions="3"> 
+ 
+     
+ 
+      <failure message="Timed out while waiting for element &lt;(//ul[@class='list-select-menu'])[2]/li[3]&gt; to be visible for 2000 milliseconds.">    at Object.activityMonitoringFilters (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\activityMonitoring.js:110:4)
+    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure> 
+ 
+     
+    </testcase> 
+   
+ 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 

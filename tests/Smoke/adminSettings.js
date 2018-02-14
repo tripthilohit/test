@@ -5,7 +5,7 @@ var signIn =  function(driver)
     driver
     .url(driver.globals.userNames.adminURL)
     .windowMaximize("current")
-    .waitForElementVisible('body', 2000)
+    //.waitForElementVisible('body', 2000)
     .useXpath()
     .click("//input[@id='admin_email']")
     .pause(1000)
