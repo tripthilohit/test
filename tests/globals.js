@@ -8,9 +8,9 @@ var userNames = {
   zipCode: '07093',
   birthDay: '10/10/1991',
   sprint: '95y',
-  adminURL: 'https://admin.staging.socialmedialink.com',
-  adminEmail: 'suli@yopmail.com',
-  adminPassword: 'General123$',
+  adminURL: 'https://admin-smiley.socialmedialink.com/',
+  adminEmail: 'suk@yopmail.com',
+  adminPassword: 'General1234#',
   facebookEmail: 'sukada.testmember8@socialmedialink.com',
   facebookPass: 'general1234',
   twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
@@ -21,9 +21,11 @@ var userNames = {
   superAdminPass: 'General123$',
   account_no: 667,
   path: 'C:/Users/you/Downloads/',
-  };
-
-
+  darDate:"(//td[@class='day'])[12]",
+  uin:'12340'
+ 
+   };
+  
 var cbt = require('cbt_tunnels');
 
 module.exports = {
