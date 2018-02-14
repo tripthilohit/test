@@ -1,12 +1,13 @@
 var userNames = {
   
-  memberURL: 'https://sul.staging.socialmedialink.com/',
+  memberURL: 'https://tripsprint95q.staging.socialmedialink.com',
   memberEmail: 'sansa@yopmail.com',
   memberPassword: '12345678',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
+
   sprint: '95y',
   adminURL: 'https://admin-smiley.socialmedialink.com/',
   adminEmail: 'suk@yopmail.com',
@@ -25,15 +26,14 @@ var userNames = {
   uin:'12340'
  
    };
-  
 var cbt = require('cbt_tunnels');
 
 module.exports = {
   beforeEach : function(done) {
     console.log('Starting up tunnel');
     cbt.start({
-      'username': 'sukada.ramakrishna@socialmedialink.com',
-      'authkey': 'u89e4efd851e17e7'
+      'username': 'tripthi.shetty@socialmedialink.com',
+      'authkey': 'u283c7d7d4fafeb7'
     }, function(err, data) {
       if (err) {
         done(err);

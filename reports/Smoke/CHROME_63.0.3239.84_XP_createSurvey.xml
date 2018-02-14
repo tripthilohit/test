@@ -5,22 +5,22 @@
 
   <testsuite name="smoke.createSurvey"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="4" time="277.6" timestamp="Wed, 07 Feb 2018 20:46:21 GMT">
+    tests="4" time="210.3" timestamp="Fri, 09 Feb 2018 18:41:26 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createSurvey" time="38.66" assertions="1">
+    <testcase name="downloadImages" classname="smoke.createSurvey" time="40.89" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.createSurvey" time="16.50" assertions="0">
+    <testcase name="signIn" classname="smoke.createSurvey" time="16.44" assertions="0">
     </testcase>
   
-    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="174.2" assertions="1">
+    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="131.8" assertions="1">
 
     
     </testcase>
   
-    <testcase name="missionLogic" classname="smoke.createSurvey" time="48.19" assertions="1">
+    <testcase name="missionLogic" classname="smoke.createSurvey" time="21.14" assertions="1">
 
     
     </testcase>
