@@ -17,7 +17,7 @@ var downloadImages = function(driver)
     .pause(2000)
     .click("//label[@for='photo_download_quality_standard']")
     .pause(2000)
-    .click("//button[@data-ga-action='Download']")
+    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
     .pause(4000)
 }
 

@@ -1,6 +1,8 @@
 
-var signinEmail = function(driver)
-{
+
+
+  var signinEmail = function(driver)
+  {
     driver
     .url(driver.globals.userNames.memberURL)
     .windowMaximize("current")
@@ -30,5 +32,6 @@ module.exports = {
     signinEmail: signinEmail
 
 
-
+module.exports = {
+    signinEmail: signinEmail
 }

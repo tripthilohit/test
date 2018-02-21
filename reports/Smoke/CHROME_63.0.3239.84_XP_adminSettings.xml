@@ -5,15 +5,22 @@
 
   <testsuite name="smoke.adminSettings"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
+<<<<<<< HEAD
     tests="5" time="167.1" timestamp="Fri, 09 Feb 2018 18:04:28 GMT">
   
     <testcase name="signIn" classname="smoke.adminSettings" time="30.18" assertions="2">
+=======
+    tests="5" time="229.1" timestamp="Tue, 20 Feb 2018 20:02:39 GMT">
+  
+    <testcase name="signIn" classname="smoke.adminSettings" time="33.99" assertions="2">
+>>>>>>> tests/tri_bc_regression1
 
     
 
     
     </testcase>
   
+<<<<<<< HEAD
     <testcase name="addDataSet1" classname="smoke.adminSettings" time="37.59" assertions="0">
     </testcase>
   
@@ -24,6 +31,18 @@
     </testcase>
   
     <testcase name="saveSettings" classname="smoke.adminSettings" time="4.302" assertions="0">
+=======
+    <testcase name="addDataSet1" classname="smoke.adminSettings" time="55.21" assertions="0">
+    </testcase>
+  
+    <testcase name="addDataSet2" classname="smoke.adminSettings" time="97.11" assertions="0">
+    </testcase>
+  
+    <testcase name="addDataSet3" classname="smoke.adminSettings" time="36.61" assertions="0">
+    </testcase>
+  
+    <testcase name="saveSettings" classname="smoke.adminSettings" time="6.187" assertions="0">
+>>>>>>> tests/tri_bc_regression1
     </testcase>
   
 
