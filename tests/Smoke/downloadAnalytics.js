@@ -1,4 +1,4 @@
-
+//comment 1
 var downloadImages = function(driver)
 {
     driver
@@ -104,7 +104,7 @@ var downloadAnalytics = function(driver)
     .pause(2000)
     .click("//input[@ng-model='ctrl.report.end_date']")
     .pause(2000)
-    .click("//td[@class='active day']/following-sibling::td[@class='day'][1]")
+    .click("//td[@class='active day']/preceeding-sibling::td[@class='day'][1]")
     .pause(5000)
     .click("//input[@ng-model='ctrl.report.start_date']")
     .pause(2000)
@@ -300,9 +300,9 @@ var downloadAnalyticsPreview = function(driver)
 module.exports={
   downloadImages: downloadImages,
   adminlogin:adminlogin,
- // activityMonitoring:activityMonitoring,
+  activityMonitoring:activityMonitoring,
   OverviewTab:OverviewTab,
-  downloadAnalytics:downloadAnalytics
- // downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
-  //downloadAnalyticsPreview:downloadAnalyticsPreview
+  downloadAnalytics:downloadAnalytics,
+  downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
+  downloadAnalyticsPreview:downloadAnalyticsPreview
 }
