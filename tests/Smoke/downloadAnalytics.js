@@ -44,8 +44,8 @@ var adminlogin =  function(driver)
     .pause(2000)
     .assert.containsText("//a[@class='test-nav-hubs']", "Mission Hub")
     //click Activity
-    .click("(//a[@class='rowclick test-hub-link ng-binding'])[2]")
-    .pause(2000)
+   .click("//a[@class='rowclick test-hub-link ng-binding'][text()='Sharing Tools']")
+   .pause(2000)
 
   }
   
