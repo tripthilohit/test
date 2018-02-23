@@ -1,4 +1,5 @@
 var userNames = {
+
   memberURL: 'https://tripsprint95kroger.staging.socialmedialink.com/',
   memberEmail: 'surt@yopmail.com',
   memberPassword: 'general1234',
@@ -6,6 +7,7 @@ var userNames = {
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
+
   sprint: '96a',
   adminURL: 'https://admin.staging.socialmedialink.com/',
   adminEmail: 'tripsprint95kroger@yopmail.com',
@@ -24,6 +26,7 @@ var userNames = {
   uin:'12340'
  
    };
+
 
 var cbt = require('cbt_tunnels');
 
