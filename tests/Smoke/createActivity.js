@@ -15,7 +15,7 @@ var downloadImages = function(driver)
     .pause(2000)
     .click("//label[@for='photo_download_quality_standard']")
     .pause(2000)
-    .click("//button[@data-ga-action='Download']")
+    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
     .pause(4000)
 }
 
@@ -221,9 +221,15 @@ module.exports = {
     .pause(2000)
     .setValue("//textarea[@ng-model='activity.bazaarvoice.bazaarvoice_encoding_key']", "6VgQ5XhdqOaVnj2FlvjqjMTxc")
     .pause(2000)
+<<<<<<< HEAD
     .click("//textarea[@placeholder='Bazaar Voice Product ID']")
     .pause(2000)
     .setValue("//textarea[@placeholder='Bazaar Voice Product ID']", "Product10")
+=======
+    .click("//div[@class='relative ng-scope']/textarea")
+    .pause(2000)
+    .setValue("//div[@class='relative ng-scope']/textarea", "Product10")
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
     .pause(2000)
     .click("//textarea[@ng-model='activity.bazaarvoice.seed_phrase']")
     .pause(2000)

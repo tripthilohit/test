@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?> 
 <testsuites errors="0" 
             failures="0" 
@@ -31,3 +32,55 @@
    
   </testsuite> 
 </testsuites> 
+=======
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="smoke.createSurvey"
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
+<<<<<<< HEAD
+    tests="4" time="210.3" timestamp="Fri, 09 Feb 2018 18:41:26 GMT">
+  
+    <testcase name="downloadImages" classname="smoke.createSurvey" time="40.89" assertions="1">
+=======
+    tests="4" time="206.7" timestamp="Tue, 20 Feb 2018 20:37:20 GMT">
+  
+    <testcase name="downloadImages" classname="smoke.createSurvey" time="31.57" assertions="1">
+>>>>>>> tests/tri_bc_regression1
+
+    
+    </testcase>
+  
+<<<<<<< HEAD
+    <testcase name="signIn" classname="smoke.createSurvey" time="16.44" assertions="0">
+    </testcase>
+  
+    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="131.8" assertions="1">
+=======
+    <testcase name="signIn" classname="smoke.createSurvey" time="12.74" assertions="0">
+    </testcase>
+  
+    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="130.3" assertions="1">
+>>>>>>> tests/tri_bc_regression1
+
+    
+    </testcase>
+  
+<<<<<<< HEAD
+    <testcase name="missionLogic" classname="smoke.createSurvey" time="21.14" assertions="1">
+=======
+    <testcase name="missionLogic" classname="smoke.createSurvey" time="32.17" assertions="1">
+>>>>>>> tests/tri_bc_regression1
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683

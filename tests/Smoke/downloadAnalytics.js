@@ -104,7 +104,11 @@ var downloadAnalytics = function(driver)
     .pause(2000)
     .click("//input[@ng-model='ctrl.report.end_date']")
     .pause(2000)
+<<<<<<< HEAD
     .click("//td[@class='active day']/preceeding-sibling::td[@class='day'][1]")
+=======
+    .click("//td[@class='active day']/following-sibling::td[@class='day'][1]")
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
     .pause(5000)
     .click("//input[@ng-model='ctrl.report.start_date']")
     .pause(2000)
@@ -300,9 +304,18 @@ var downloadAnalyticsPreview = function(driver)
 module.exports={
   downloadImages: downloadImages,
   adminlogin:adminlogin,
+<<<<<<< HEAD
   activityMonitoring:activityMonitoring,
   OverviewTab:OverviewTab,
   downloadAnalytics:downloadAnalytics,
   downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
   downloadAnalyticsPreview:downloadAnalyticsPreview
 }
+=======
+ // activityMonitoring:activityMonitoring,
+  OverviewTab:OverviewTab,
+  downloadAnalytics:downloadAnalytics
+ // downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
+  //downloadAnalyticsPreview:downloadAnalyticsPreview
+}
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683

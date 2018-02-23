@@ -5,9 +5,15 @@
 
   <testsuite name="smoke.memberSignupFacebook"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
+<<<<<<< HEAD
     tests="1" time="50.40" timestamp="Fri, 09 Feb 2018 18:23:45 GMT">
   
     <testcase name="Signing up via Facebook" classname="smoke.memberSignupFacebook" time="50.40" assertions="1">
+=======
+    tests="1" time="64.88" timestamp="Tue, 20 Feb 2018 20:54:01 GMT">
+  
+    <testcase name="Signing up via Facebook" classname="smoke.memberSignupFacebook" time="64.88" assertions="1">
+>>>>>>> tests/tri_bc_regression1
 
     
     </testcase>

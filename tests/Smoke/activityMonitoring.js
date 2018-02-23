@@ -22,7 +22,11 @@ var adminlogin =  function(driver)
     .pause(2000)
     .assert.containsText("//a[@class='test-nav-hubs']", "Mission Hub")
     //click Activity
+<<<<<<< HEAD
     .click("//a[@class='rowclick test-hub-link ng-binding'][text()='Sharing Tools']")
+=======
+    .click("(//a[@class='rowclick test-hub-link ng-binding'])[2]")
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
     .pause(2000)
 
   }
@@ -39,6 +43,7 @@ var activityMonitoring = function(driver)
   //.click("//td[@class='active day']/preceding-sibling::td[@class='day'][2]")
   .pause(2000)
   //click flags postive, negetive and adverse
+<<<<<<< HEAD
   .click("(//input[@ng-model='share.admin_feedback'])[1]")
   .pause(2000)
   .click("(//input[@ng-model='share.admin_feedback'])[5]")
@@ -79,13 +84,57 @@ var activityMonitoring = function(driver)
   .pause(2000)
   //search using UIN
   .execute('scrollTo(200,0)')
+=======
+  //.click("(//input[@ng-model='share.admin_feedback'])[1]")
+  //.pause(2000)
+  //.click("(//input[@ng-model='share.admin_feedback'])[5]")
+  //.pause(2000)
+  //.click("(//input[@ng-model='share.admin_feedback'])[9]")
+  //.pause(2000)
+  //check for adverse event email
+ // .url("http://yopmail.com")
+  //.pause(3000)
+  //.click("//input[@id='login']")
+  //.pause(1000)
+  //.setValue("//input[@id='login']", driver.globals.userNames.adminEmail)
+  //.pause(5000)
+  //.click("//input[@class='sbut']")
+  //.pause(4000)
+  //.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/adverseEventEmail.png')
+  //.pause(2000)
+  //navigate back to activity monitoring page
+  //.execute(function () {
+  //  window.history.back()
+  // })
+  //.pause(2000)
+  //.execute(function () {
+   // window.history.back()
+  // })
+  //.pause(2000)
+  //accept a post
+  //.click("(//button[@class='btn-accept'])[1]")
+  //.pause(2000)
+  //.execute('scrollTo(2000,2000)')
+  //decline a post with reason
+  //.click("(//button[@type='button'])[61]")
+  //.pause(2000)
+  //.waitForElementVisible("(//ul[@class='reason-list'])[12]/li[2]",2000)
+  //.moveToElement("(//ul[@class='reason-list'])[12]/li[2]",1,1)
+  //.pause(2000)
+  //.mouseButtonClick(1)
+  //.pause(2000)
+  //search using UIN
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
   .click("//input[@ng-model='value']")
   .setValue("//input[@ng-model='value']",driver.globals.userNames.uin)
   .pause(2000)
   .mouseButtonClick(1)
   .pause(2000)
+<<<<<<< HEAD
   .click("//input[@ng-model='value']")
   .clearValue("//input[@ng-model='value']")
+=======
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
 }
 
   var activityMonitoringFilters =function(driver)
@@ -205,6 +254,7 @@ var activityMonitoring = function(driver)
   .pause(2000)
    //filter by "Email Group Invite"
   .click("(//button[@data-toggle='dropdown'])[3]")
+<<<<<<< HEAD
   .pause(4000)
   .waitForElementVisible("(//ul[@class='list-select-menu'])[2]/li[15]",4000)
   .moveToElement("(//ul[@class='list-select-menu'])[2]/li[15]",1,1)
@@ -320,6 +370,19 @@ var activityMonitoring = function(driver)
   .pause(2000)
   .waitForElementVisible("//ol[@class='all-tags']/li[1]",2000)
   .moveToElement("//ol[@class='all-tags']/li[1]",1,1)
+=======
+  .pause(2000)
+  .waitForElementVisible("(//ul[@class='list-select-menu'])[2]/li[15]",2000)
+  .moveToElement("(//ul[@class='list-select-menu'])[2]/li[15]",1,1)
+  .pause(2000)
+  .mouseButtonClick(1)
+  .pause(2000)
+   //filter by "All Sources - BazaarVoice"
+  .click("(//button[@data-toggle='dropdown'])[3]")
+  .pause(2000)
+  .waitForElementVisible("(//ul[@class='list-select-menu'])[2]/li[16]",2000)
+  .moveToElement("(//ul[@class='list-select-menu'])[2]/li[16]",1,1)
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
   .pause(2000)
   .mouseButtonClick(1)
   .pause(2000)

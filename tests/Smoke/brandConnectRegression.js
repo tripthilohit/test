@@ -16,7 +16,7 @@ var downloadImages = function(driver)
     .pause(2000)
     .click("//label[@for='photo_download_quality_standard']")
     .pause(2000)
-    .click("//button[@data-ga-action='Download']")
+    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
     .pause(4000)
     //download survey badge
     .url("https://burst.shopify.com/")
@@ -29,12 +29,14 @@ var downloadImages = function(driver)
     .pause(2000)
     .click("//label[@for='photo_download_quality_standard']")
     .pause(2000)
-    .click("//button[@data-ga-action='Download']")
+    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
     .pause(4000)
 }
 
 var modulecreateBrandConnect = require('./createBrandConnect.js')
 var modulememberSigninEmail = require('./memberSigninEmail.js')
+var modulecreateSurvey = require('./createSurvey.js')
+
 
 var editDiscussion = function(driver)
 {
@@ -105,7 +107,7 @@ var adminCommentReply = function(driver)
     .click("//a[@href='/brand_connect/topics']")
     .pause(3000)
     //click discussion title
-    .click("(//a[@title='Discussion Title'])[1]")
+    .click("(//ul[@class='bconnect-topics-list'])[1]/li[1]/h4/a")
     .pause(3000)
     //add comment 1
     .click("(//textarea[@ng-model='comment.text'])[1]")
@@ -177,7 +179,7 @@ var memberCommentReply = function(driver)
     .saveScreenshot('screenshots/bcMemberStartDiscussion.png')
     .pause(1000)
     //click first Discussion
-    .click("(//a[@title='Discussion Title'])[1]")
+    .click("(//ul[@class='bconnect-topics-list'])[1]/li[1]/h4/a")
     .pause(3000)
     //add comment 1
     .click("(//textarea[@ng-model='comment.text'])[1]")
@@ -215,7 +217,7 @@ var memberCommentSorting = function(driver)
     .click("//a[@href='/brand_connect/topics']")
     .pause(5000)
     //click first Discussion
-    .click("(//a[@title='Discussion Title'])[1]")
+    .click("(//ul[@class='bconnect-topics-list'])[1]/li[1]/h4/a")
     .pause(3000)
     //add comment 1
     .click("(//textarea[@ng-model='comment.text'])[1]")
@@ -486,6 +488,9 @@ var memberCommentSorting = function(driver)
     .pause(500)
     .setValue("(//textarea[@ng-model='comment.text'])[1]","member sort 34")
     .pause(500)
+    //submit
+    .click("(//a[@class='btn btn-color btn-md bconnect-new-post-submit btn-forum btn-forum-invert'])[1]")
+    .pause(2000)
      //add comment 35
     .click("(//textarea[@ng-model='comment.text'])[1]")
     .pause(500)
@@ -516,6 +521,9 @@ var memberCommentSorting = function(driver)
     .execute('scrollTo(8000,8000)')
     .pause(1000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcMemberCommentSorting.png')
+    //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
 
 }
 var enableMemberDiscussion = function(driver)
@@ -593,6 +601,9 @@ var createMemberDiscussion = function(driver)
     //submit
     .click("//input[@value='Create Discussion']")
     .pause(2000)
+    //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
 }
 var createFemaleMember = function(driver)
 {
@@ -680,6 +691,9 @@ var memberDiscussionVisibilityUntilApproved = function(driver)
     .pause(5000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcMemberDiscussionVisibilityUntilApproved.png')
     .pause(1000)
+    //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
 }
 var approveMemberDiscussion = function(driver)
 {
@@ -714,28 +728,176 @@ var verifyMemberDiscussionOnApproval = function(driver)
     .pause(5000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcMemberDiscussionVisibilityOnApproval.png')
     .pause(1000)
+     //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+}
+var hideComment = function(driver)
+{
+    driver
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(5000)
+    .click("(//ul[@class='bconnect-topics-list'])[1]/li[2]/h4/a")
+    .pause(4000)
+    .execute('scrollTo(1000,1000)')
+    .click("(//a[@ng-hide='comment.hidden'])[1]")
+    .pause(1000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcHideComment.png')
+    .pause(1000)
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+}
+var verifyHideComment = function(driver)
+{
+    driver
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(5000)
+    .click("(//ul[@class='bconnect-topics-list'])[1]/li[2]/h4/a")
+    .pause(4000)
+    .execute('scrollTo(600,600)')
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcVerifyHideComment.png')
+    .pause(2000)
+     //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+}
+var createPrivateDiscussion = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(5000)
+    //add new Topic
+    .click("//a[@href='/brand_connect/topics/new']")
+    .pause(3000)
+    //Upload brand connect topic image
+    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .pause(2000)
+    //add topic title
+    .click("//input[@id='topic_title']")
+    .setValue("//input[@id='topic_title']","Topic for Male only")
+    .pause(500)
+    //submit
+    .click("//input[@value='Create Topic']")
+    .pause(2000)
+    //add new Discussion
+    .click("//a[@class='btn btn-color btn-md pull-right bconnect-topic-bar-button btn-forum']")
+    .pause(3000)
+    //add discussion title
+    .click("//input[@id='discussion_title']")
+    .setValue("//input[@id='discussion_title']","Discussion for Male only")
+    .pause(500)
+    //add group
+    .click("//div[@id='s2id_discussion_limiter_id']")
+    .pause(1000)
+    .setValue("//input[@id='s2id_autogen1_search']","Male")
+    .keys(driver.Keys.ENTER)
+    .pause(2000)
+    //add discussion message
+    .click("//textarea[@id='discussion_first_comment_attributes_text']")
+    .pause(500)
+    .setValue("//textarea[@id='discussion_first_comment_attributes_text']", "Discussion message Discussion message Discussion message Discussion message Discussion message Discussion message")
+    //submit
+    .click("//input[@value='Create Discussion']")
+    .pause(2000)
+    //verify
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(3000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcverifyPrivateBrandConnectCreation.png')
+    .pause(2000)
+    //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+}
+var verifyPrivateDiscussionMale = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(5000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcverifyPrivateDiscussionMale.png')
+    .pause(2000)
+     //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+
+}
+var verifyPrivateDiscussionFemale = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(5000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcverifyPrivateDiscussionFemale.png')
+    .pause(2000)
+     //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+
+}
+var signinFemale = function(driver)
+{
+    driver
+    .url(driver.globals.userNames.memberURL)
+    .windowMaximize("current")
+    //.waitForElementVisible('body', 2000)
+    .useXpath()
+    .click("(//a[contains(text(), 'Login')])[2]")
+    .pause(1000)
+    .click("(//div[contains(text(), 'Email')])[6]")
+    .pause(1000)
+    .click("//div[@class='desktop-container ng-scope']/div/form/div[1]/input")
+    .pause(1000)
+    .setValue('//div[@class="desktop-container ng-scope"]/div/form/div[1]/input', driver.globals.userNames.memberEmailFemale)
+    .pause(1000)
+    .click("//div[@class='desktop-container ng-scope']/div/form/div[2]/input")
+    .pause(1000)
+    .setValue("//div[@class='desktop-container ng-scope']/div/form/div[2]/input", driver.globals.userNames.memberPassword)
+    .pause(1000)
+    .click("//div[@class='desktop-container ng-scope']/div/form/button")
+    .pause(4000)
+    //.assert.containsText("//div[@class='content-offer js-content-offer']/h1", 'Offers for You')
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginConfirmFemale.png')
+    .pause(2000)
+
 }
 module.exports={
-    //downloadImages: downloadImages,
-  //SignIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
-//createBrandConnectTopic: modulecreateBrandConnect.createBrandConnectTopic,
-//createBrandConnectDiscussion: modulecreateBrandConnect.createBrandConnectDiscussion,
-//editDiscussion: editDiscussion,
-//editTopic: editTopic,
-//adminCommentReply: adminCommentReply,
+    downloadImages: downloadImages,
+  signIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
+createBrandConnectTopic: modulecreateBrandConnect.createBrandConnectTopic,
+createBrandConnectDiscussion: modulecreateBrandConnect.createBrandConnectDiscussion,
+editDiscussion: editDiscussion,
+editTopic: editTopic,
+adminCommentReply: adminCommentReply,
 memberSignIn: memberSignIn,                   //signin to member application as a member
-//memberBC_Notification: memberBC_Notification,
-//memberCommentReply: memberCommentReply,
-//memberCommentSorting: memberCommentSorting,
-//enableMemberDiscussion: enableMemberDiscussion,
-//signinEmail: modulememberSigninEmail.signinEmail,   //signin to member application as a member who has not created the discussion
-//confirmMemberStartDiscussion: confirmMemberStartDiscussion,
-//createMemberDiscussion: createMemberDiscussion,
-//createFemaleMember: createFemaleMember,
-//memberDiscussionVisibilityUntilApproved: memberDiscussionVisibilityUntilApproved,
-//SignInAdmin: modulecreateBrandConnect.signIn,     //signin to member application as an admin again to approve discussion
-//approveMemberDiscussion: approveMemberDiscussion,
-//signinEmailAgain: modulememberSigninEmail.signinEmail, //signin to member application as a member who has not started the discussion again
-//verifyMemberDiscussionOnApproval: verifyMemberDiscussionOnApproval,
-
+memberBC_Notification: memberBC_Notification,
+memberCommentReply: memberCommentReply,
+memberCommentSorting: memberCommentSorting,
+enableMemberDiscussion: enableMemberDiscussion,
+signinEmail: modulememberSigninEmail.signinEmail,   //signin to member application as a member who has not created the discussion
+confirmMemberStartDiscussion: confirmMemberStartDiscussion,
+createMemberDiscussion: createMemberDiscussion,
+createFemaleMember: createFemaleMember,
+memberDiscussionVisibilityUntilApproved: memberDiscussionVisibilityUntilApproved,
+signInAdmin: modulecreateBrandConnect.signIn,     //signin to member application as an admin again to approve discussion
+approveMemberDiscussion: approveMemberDiscussion,
+signinEmailAgain: modulememberSigninEmail.signinEmail, //signin to member application as a member who has not started the discussion again
+verifyMemberDiscussionOnApproval: verifyMemberDiscussionOnApproval,
+signInAdmin2: modulecreateBrandConnect.signIn,         //signin to member application as an admin again to hide comment
+hideComment: hideComment,
+signinMember3: modulememberSigninEmail.signinEmail,
+verifyHideComment: verifyHideComment
+signInAdmin3: modulecreateBrandConnect.signIn,
+createPrivateDiscussion: createPrivateDiscussion,
+signinMember4: modulememberSigninEmail.signinEmail,
+verifyPrivateDiscussionMale: verifyPrivateDiscussionMale,
+signinFemale: signinFemale,
+verifyPrivateDiscussionFemale: verifyPrivateDiscussionFemale
 }
