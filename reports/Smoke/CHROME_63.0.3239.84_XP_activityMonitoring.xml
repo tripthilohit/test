@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="0" 
+            tests="3"> 
+ 
+  <testsuite name="smoke.activityMonitoring" 
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
+    tests="3" time="400.9" timestamp="Fri, 23 Feb 2018 16:16:47 GMT"> 
+   
+    <testcase name="adminlogin" classname="smoke.activityMonitoring" time="42.13" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="activityMonitoring" classname="smoke.activityMonitoring" time="73.87" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="activityMonitoringFilters" classname="smoke.activityMonitoring" time="284.9" assertions="26"> 
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+ 
+     
+    </testcase> 
+   
+ 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 
