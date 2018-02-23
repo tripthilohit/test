@@ -36,8 +36,9 @@ var activityMonitoring = function(driver)
   .click("//input[@ng-model='startDate']")
   .pause(2000)
   .click("//td[@class='active day']")
-  //.click("//td[@class='active day']/preceding-sibling::td[@class='day'][2]")
   .pause(2000)
+  //.click("//td[@class='active day']/preceding-sibling::td[@class='day'][2]")
+  //.pause(2000)
   //click flags postive, negetive and adverse
   .click("(//input[@ng-model='share.admin_feedback'])[1]")
   .pause(2000)
@@ -86,6 +87,7 @@ var activityMonitoring = function(driver)
   .pause(2000)
   .click("//input[@ng-model='value']")
   .clearValue("//input[@ng-model='value']")
+
 }
 
   var activityMonitoringFilters =function(driver)
