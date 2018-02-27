@@ -5,7 +5,7 @@ var downloadImages = function(driver)
     .pause(3000)
     .waitForElementVisible('body', 1000)
     .useXpath()
-    //download brand connect image
+    //download activity badge
     .pause(2000)
     .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
     .pause(1000)
@@ -132,7 +132,7 @@ var createBrandConnectDiscussion = function(driver)
 module.exports={
     downloadImages: downloadImages,
   signIn: signIn,
-  firstSignin: firstSignin,
+  //firstSignin: firstSignin,
 createBrandConnectTopic: createBrandConnectTopic,
 createBrandConnectDiscussion: createBrandConnectDiscussion
 }

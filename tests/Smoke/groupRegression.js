@@ -86,10 +86,61 @@ var createList = function(driver)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createListUpload.png')
     .pause(2000)
 }
+var createGroupExcludeState = function(driver)
+{
+    //click Groups
+    driver
+    .useXpath()
+    .click("//a[@class='test-nav-groups']")
+    .pause(4000)
+    //click add group
+    .click("//a[@class='btn btn-default btn-icon-add test-group-add']")
+    .pause(4000)
+    .click("//button[@class='btn-edit']")
+    .pause(2000)
+    //edit name of the group
+    .clearValue("//input[@ng-show='isEdit']")
+    .pause(500)
+    .setValue("//input[@ng-show='isEdit']","Exclude State")
+    .pause(1000)
+    //click country link to add canada
+    .click("//a[@class='test-group-country-link']")
+    .pause(1000)
+    .click("//label[@for='checkbox_criterias.country_CA']")
+    .pause(1000)
+    .click("//button[@class='btn btn-primary btn-xs test-group-country-save']")
+    .pause(1000)
+    //click US states link
+    .click("//a[@class='test-group-us_states-link']")
+    .pause(1000)
+    //exclude NJ
+    .click("(//ul[@class='dropdown-select-menu'])[1]/li[2]")
+    .pause(2000)
+    .click("(//button[@class='dropdown-select-toggle filter-option'])[2]")
+    .pause(1000)
+    //add nj to exclude
+    .click("(//ul[@class='dropdown-select-menu'])[2]/li[37]")
+    .pause(2000)
+    //click add
+    .click("(//button[@class='btn-range btn-range-plus'])[1]")
+    .pause(1000)
+    //click done
+    .click("//button[@class='btn btn-primary btn-xs test-group-us_states-save']")
+    .pause(1000)
+    //click save group
+    .click("//a[@class='btn btn-default test-group-save']")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createGroupExcludeState.png')
+    .pause(2000)
+    //click members
+    .click("//a[@class='test-nav-members']")
+    .pause(4000)
+
+}
 module.exports = {
-    downloadList: downloadList,
+    //downloadList: downloadList,
     signinEmail: signinEmail,
     //createGroupMale: createGroupMale,
-    createList: createList
-
+    //createList: createList,
+    createGroupExcludeState: createGroupExcludeState
 }
