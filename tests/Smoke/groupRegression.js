@@ -113,7 +113,10 @@ var createGroupExcludeState = function(driver)
     //click US states link
     .click("//a[@class='test-group-us_states-link']")
     .pause(1000)
-    //exclude NJ
+    //click all to open the drop down menu
+    .click("(//button[@class='dropdown-select-toggle filter-option'])[1]")
+    .pause(1000)
+    //click 'All except'
     .click("(//ul[@class='dropdown-select-menu'])[1]/li[2]")
     .pause(2000)
     .click("(//button[@class='dropdown-select-toggle filter-option'])[2]")
@@ -128,6 +131,8 @@ var createGroupExcludeState = function(driver)
     .click("//button[@class='btn btn-primary btn-xs test-group-us_states-save']")
     .pause(1000)
     //click save group
+    .execute('scrollTo(0,0)')
+    .pause(1000)
     .click("//a[@class='btn btn-default test-group-save']")
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createGroupExcludeState.png')

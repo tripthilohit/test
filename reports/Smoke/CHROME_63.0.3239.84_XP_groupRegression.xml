@@ -5,12 +5,12 @@
 
   <testsuite name="smoke.groupRegression"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="2" time="121.5" timestamp="Tue, 27 Feb 2018 20:18:27 GMT">
+    tests="2" time="80.01" timestamp="Wed, 28 Feb 2018 15:20:51 GMT">
   
-    <testcase name="signinEmail" classname="smoke.groupRegression" time="27.72" assertions="0">
+    <testcase name="signinEmail" classname="smoke.groupRegression" time="24.24" assertions="0">
     </testcase>
   
-    <testcase name="createGroupExcludeState" classname="smoke.groupRegression" time="93.76" assertions="0">
+    <testcase name="createGroupExcludeState" classname="smoke.groupRegression" time="55.76" assertions="0">
     </testcase>
   
 
