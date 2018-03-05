@@ -132,7 +132,7 @@ var createBrandConnectDiscussion = function(driver)
 module.exports={
     downloadImages: downloadImages,
   signIn: signIn,
-  //firstSignin: firstSignin,
+  firstSignin: firstSignin,
 createBrandConnectTopic: createBrandConnectTopic,
 createBrandConnectDiscussion: createBrandConnectDiscussion
 }
