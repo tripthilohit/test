@@ -1,4 +1,5 @@
 
+//comment test
 var modulecreateSurvey = require("./createSurvey.js")
 
 var homepageTemplate1 = function(driver)
@@ -36,8 +37,6 @@ var homepageTemplate1 = function(driver)
 	.setValue("//textarea[@ng-model='home_page_theme.login_description']","Login description Login description Login description Login description")
 	.pause(1000)
 	.exceute('scrollTo(3000,3000)')
-
-
 
 }
 
