@@ -95,6 +95,8 @@ var createBrandConnectTopic = function(driver)
     .pause(3000)
     //Upload brand connect topic image
     .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    //.setValue("//input[@type='file']", 'https://s3.amazonaws.com/sml-demo/uploads/nightwatch/brandConnectMemberImage.jpeg')
+  //.setValue("//input[@type='file']", "s3.amazonaws.com/sml-demo/uploads/nightwatch/brandConnectMemberImage.jpeg")
     .pause(2000)
     //add topic title
     .click("//input[@id='topic_title']")
@@ -132,7 +134,7 @@ var createBrandConnectDiscussion = function(driver)
 module.exports={
     downloadImages: downloadImages,
   signIn: signIn,
-  //firstSignin: firstSignin,
+  firstSignin: firstSignin,
 createBrandConnectTopic: createBrandConnectTopic,
 createBrandConnectDiscussion: createBrandConnectDiscussion
 }
