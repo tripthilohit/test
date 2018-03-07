@@ -1,8 +1,8 @@
 var userNames = {
   
   memberURL: 'https://suksprint95.socialmedialink.com/',
-  memberEmail: 'sukrao10@yopmail.com',
-  memberPassword: '12345678',
+  memberEmail: 'sulp@yopmail.com',
+  memberPassword: 'general1234',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
@@ -32,8 +32,8 @@ var userNames = {
   caAddressLine2:'EASY ST',
   caCity:'OTTAWA',
   postalCode:'K1A 0B1',
-  memberNewEmail: 'sukrao10@yopmail.com',
-  memberNewPassword:'general1234',
+  memberNewEmail: 'sukrao14@yopmail.com',
+  memberNewPassword:'12345678',
 
 
 
