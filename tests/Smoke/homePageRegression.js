@@ -44,7 +44,7 @@ var homePageTemplate1 = function(driver)
 	//click home page link
 	.click("//a[@href='/accounts/home_page']")
 	.pause(3000)
-	//click 
+	//click template 1
 	.click("(//ul[@class='homepage-layout']/li/label)[1]")
 	.pause(1000)
 	//add splash headline
@@ -163,12 +163,19 @@ var homePageTemplate1 = function(driver)
     .execute('scrollTo(4000,4000)')
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate1AdminSettings1.png')
     .pause(2000)
+    //logout
+    .click("//button[@class='topbar-menu-toggle test-nav-user']")
+    .pause(1000)
+    .click("//a[@class='test-nav-logout']")
+    .pause(2000)
+
 
 }
 var verifyMemberSideT1 = function(driver)
 {
 	driver
 	.useXpath()
+	//redirect to member side
 	.url(driver.globals.userNames.memberURL)
 	.pause(2000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate1SplashHeadline.png')
@@ -196,15 +203,40 @@ var homePageTemplate2 = function(driver)
 {
 	driver
 	.useXpath()
-	.
+	//click administration
+	.click("(//a[@class='test-nav-config'])[2]")
+	.pause(3000)
+	//click home page link
+	.click("//a[@href='/accounts/home_page']")
+	.pause(3000)
+	//click template 2
+	.click("(//ul[@class='homepage-layout']/li/label)[2]")
+	.pause(1000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate2.png')
+    .pause(2000)
+    //save
+	.execute('scrollTo(0,0)')
+	.pause(2000)
+	.click("//a[@class='btn btn-default']")
+	.pause(4000)
 }
-
+var verifyMemberSideT2 = function(driver)
+{
+	driver
+	.useXpath()
+	//redirect to member side
+	.url(driver.globals.userNames.memberURL)
+	.pause(2000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate2.png')
+    .pause(2000)
+}
 module.exports =
 {
 	//downloadImages:downloadImages,
 	//signInAdmin: modulecreateSurvey.signIn,
 //homePageTemplate1: homePageTemplate1,
 //verifyMemberSideT1: verifyMemberSide,
+signInAdmin2: modulecreateSurvey.signIn,
 homePageTemplate2: homePageTemplate2,
 verifyMemberSideT2: verifyMemberSideT2
 
