@@ -1,27 +1,27 @@
 var userNames = {
   
-  memberURL: 'https://suksprint95.socialmedialink.com/',
-  memberEmail: 'sulp@yopmail.com',
-  memberPassword: 'general1234',
+  memberURL: 'https://tripsprint95t.staging.socialmedialink.com',
+  memberEmail: 'lolo@yopmail.com',
+  memberPassword: '12345678',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
-
-  sprint: '96a',
-  adminURL: 'https://admin-smiley.socialmedialink.com/',
-  adminEmail: 'sur@yopmail.com',
+  sprint: '95t',
+  adminURL: 'https://admin.staging.socialmedialink.com',
+  adminEmail: 'tripsprint95t@yopmail.com',
   adminPassword: 'General123$',
-  facebookEmail: 'sukada.testmember8@socialmedialink.com',
-  facebookPass: 'general1234',
-  twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
+  facebookEmail: 'tripthishetty20@gmail.com',
+  facebookPass: 'qwerty$',
+  twitterEmail: 'tripthi.testmember15@socialmedialink.com',
   twitterPass: 'general1234',
-  instagramUserName: 'sukadar',
-  instagramPass: 'general1234',
-  superAdminEmail: 'sukada.ramakrishna@socialmedialink.com',
-  superAdminPass: 'General1234#',
+  instagramUserName: 'tripthi.shetty',
+  instagramPass: 'abcd1234',
+  superAdminEmail: 'tripthi.testmember3@socialmedialink.com',
+  superAdminPass: 'General123$',
   account_no: 667,
   path: 'C:/Users/you/Downloads/',
+  memberEmailFemale: 'leena@yopmail.com',
   darDate:"(//td[@class='day'])[27]",
   uin:'12448',
   pinterestUserName:'sukadamr',
@@ -33,20 +33,16 @@ var userNames = {
   caCity:'OTTAWA',
   postalCode:'K1A 0B1',
   memberNewEmail: 'sukrao14@yopmail.com',
-  memberNewPassword:'12345678',
-
-
-
- 
-   };
+  memberNewPassword:'12345678'
+    };
 var cbt = require('cbt_tunnels');
 
 module.exports = {
   beforeEach : function(done) {
     console.log('Starting up tunnel');
     cbt.start({
-      'username': 'sukada.ramakrishna@socialmedialink.com',
-      'authkey': 'u89e4efd851e17e7'
+      'username': 'tripthi.shetty@socialmedialink.com',
+      'authkey': 'u283c7d7d4fafeb7'
     }, function(err, data) {
       if (err) {
         done(err);
