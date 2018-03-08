@@ -219,6 +219,11 @@ var homePageTemplate2 = function(driver)
 	.pause(2000)
 	.click("//a[@class='btn btn-default']")
 	.pause(4000)
+	//logout
+    .click("//button[@class='topbar-menu-toggle test-nav-user']")
+    .pause(1000)
+    .click("//a[@class='test-nav-logout']")
+    .pause(2000)
 }
 var verifyMemberSideT2 = function(driver)
 {
@@ -227,7 +232,38 @@ var verifyMemberSideT2 = function(driver)
 	//redirect to member side
 	.url(driver.globals.userNames.memberURL)
 	.pause(2000)
-	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate2.png')
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate2MemberVerify.png')
+    .pause(2000)
+}
+var homePageTemplate3 = function(driver)
+{
+	driver
+	.useXpath()
+	//click administration
+	.click("(//a[@class='test-nav-config'])[2]")
+	.pause(3000)
+	//click home page link
+	.click("//a[@href='/accounts/home_page']")
+	.pause(3000)
+	//click template 2
+	.click("(//ul[@class='homepage-layout']/li/label)[3]")
+	.pause(1000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate3.png')
+    .pause(2000)
+    //save
+	.execute('scrollTo(0,0)')
+	.pause(2000)
+	.click("//a[@class='btn btn-default']")
+	.pause(4000)
+}
+var verifyMemberSideT3 = function(driver)
+{
+	driver
+	.useXpath()
+	//redirect to member side
+	.url(driver.globals.userNames.memberURL)
+	.pause(2000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate3MemberVerify.png')
     .pause(2000)
 }
 module.exports =
@@ -236,8 +272,11 @@ module.exports =
 	//signInAdmin: modulecreateSurvey.signIn,
 //homePageTemplate1: homePageTemplate1,
 //verifyMemberSideT1: verifyMemberSide,
-signInAdmin2: modulecreateSurvey.signIn,
-homePageTemplate2: homePageTemplate2,
-verifyMemberSideT2: verifyMemberSideT2
+//signInAdmin2: modulecreateSurvey.signIn,
+//homePageTemplate2: homePageTemplate2,
+//verifyMemberSideT2: verifyMemberSideT2,
+//signInAdmin3: modulecreateSurvey.signIn,
+//homePageTemplate3: homePageTemplate3,
+//verifyMemberSideT3: verifyMemberSideT3
 
 }
