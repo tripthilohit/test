@@ -246,7 +246,7 @@ var homePageTemplate3 = function(driver)
 	//click home page link
 	.click("//a[@href='/accounts/home_page']")
 	.pause(3000)
-	//click template 2
+	//click template 3
 	.click("(//ul[@class='homepage-layout']/li/label)[3]")
 	.pause(1000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate3.png')
@@ -282,13 +282,43 @@ var previewDesktopMobile = function(driver)
 	//click home page link
 	.click("//a[@href='/accounts/home_page']")
 	.pause(3000)
+	//click template 3
+	.click("(//ul[@class='homepage-layout']/li/label)[3]")
+	.pause(1000)
 	//preview desktop for template 3
 	.click("(//a[@class='btn btn-cancel'])[1]")
-	.pause(1000)
+	.pause(4000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageDesktopPreviewT3.png')
     .pause(2000)
+    //preview mobile for template 3
 	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
+   	.pause(2000)
+   	//click template 2
+	.click("(//ul[@class='homepage-layout']/li/label)[2]")
 	.pause(1000)
+   	//preview desktop for template 2
+	.click("(//a[@class='btn btn-cancel'])[1]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageDesktopPreviewT3.png')
+    .pause(2000)
+    //preview mobile for template 2
+	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
+   	.pause(2000)
+   	//click template 1
+	.click("(//ul[@class='homepage-layout']/li/label)[1]")
+	.pause(1000)
+   	//preview desktop for template 1
+	.click("(//a[@class='btn btn-cancel'])[1]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageDesktopPreviewT3.png')
+    .pause(2000)
+    //preview mobile for template 1
+	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(4000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
    	.pause(2000)
 }
