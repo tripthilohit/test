@@ -224,6 +224,7 @@ var homePageTemplate2 = function(driver)
     .pause(1000)
     .click("//a[@class='test-nav-logout']")
     .pause(2000)
+
 }
 var verifyMemberSideT2 = function(driver)
 {
@@ -245,7 +246,7 @@ var homePageTemplate3 = function(driver)
 	//click home page link
 	.click("//a[@href='/accounts/home_page']")
 	.pause(3000)
-	//click template 2
+	//click template 3
 	.click("(//ul[@class='homepage-layout']/li/label)[3]")
 	.pause(1000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate3.png')
@@ -255,6 +256,11 @@ var homePageTemplate3 = function(driver)
 	.pause(2000)
 	.click("//a[@class='btn btn-default']")
 	.pause(4000)
+	//logout
+    .click("//button[@class='topbar-menu-toggle test-nav-user']")
+    .pause(1000)
+    .click("//a[@class='test-nav-logout']")
+    .pause(2000)
 }
 var verifyMemberSideT3 = function(driver)
 {
@@ -266,6 +272,57 @@ var verifyMemberSideT3 = function(driver)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageTemplate3MemberVerify.png')
     .pause(2000)
 }
+var previewDesktopMobile = function(driver)
+{
+	driver
+	.useXpath()
+	//click administration
+	.click("(//a[@class='test-nav-config'])[2]")
+	.pause(3000)
+	//click home page link
+	.click("//a[@href='/accounts/home_page']")
+	.pause(3000)
+	//click template 3
+	.click("(//ul[@class='homepage-layout']/li/label)[3]")
+	.pause(1000)
+	//preview desktop for template 3
+	.click("(//a[@class='btn btn-cancel'])[1]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageDesktopPreviewT3.png')
+    .pause(2000)
+    //preview mobile for template 3
+	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
+   	.pause(2000)
+   	//click template 2
+	.click("(//ul[@class='homepage-layout']/li/label)[2]")
+	.pause(1000)
+   	//preview desktop for template 2
+	.click("(//a[@class='btn btn-cancel'])[1]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageDesktopPreviewT3.png')
+    .pause(2000)
+    //preview mobile for template 2
+	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
+   	.pause(2000)
+   	//click template 1
+	.click("(//ul[@class='homepage-layout']/li/label)[1]")
+	.pause(1000)
+   	//preview desktop for template 1
+	.click("(//a[@class='btn btn-cancel'])[1]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageDesktopPreviewT3.png')
+    .pause(2000)
+    //preview mobile for template 1
+	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(4000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
+   	.pause(2000)
+}
+
 module.exports =
 {
 	//downloadImages:downloadImages,
@@ -278,5 +335,6 @@ module.exports =
 //signInAdmin3: modulecreateSurvey.signIn,
 //homePageTemplate3: homePageTemplate3,
 //verifyMemberSideT3: verifyMemberSideT3
-
+signInAdmin4: modulecreateSurvey.signIn,
+previewDesktopMobile: previewDesktopMobile
 }
