@@ -5,15 +5,15 @@
 
   <testsuite name="smoke.homePageRegression"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="3" time="54.32" timestamp="Wed, 07 Mar 2018 23:26:08 GMT">
+    tests="3" time="78.26" timestamp="Thu, 08 Mar 2018 16:41:48 GMT">
   
-    <testcase name="signInAdmin2" classname="smoke.homePageRegression" time="25.26" assertions="0">
+    <testcase name="signInAdmin3" classname="smoke.homePageRegression" time="45.95" assertions="0">
     </testcase>
   
-    <testcase name="homePageTemplate2" classname="smoke.homePageRegression" time="19.71" assertions="0">
+    <testcase name="homePageTemplate3" classname="smoke.homePageRegression" time="21.03" assertions="0">
     </testcase>
   
-    <testcase name="verifyMemberSideT2" classname="smoke.homePageRegression" time="9.343" assertions="0">
+    <testcase name="verifyMemberSideT3" classname="smoke.homePageRegression" time="11.29" assertions="0">
     </testcase>
   
 
