@@ -321,8 +321,22 @@ var previewDesktopMobile = function(driver)
 	.pause(4000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePageMobilePreviewT3.png')
    	.pause(2000)
+   	//logout
+    .click("//button[@class='topbar-menu-toggle test-nav-user']")
+    .pause(1000)
+    .click("//a[@class='test-nav-logout']")
+    .pause(2000)
 }
-
+var verifyBeforeSave = function(driver)
+{
+	driver
+	.useXpath()
+	//redirect to member side
+	.url(driver.globals.userNames.memberURL)
+	.pause(2000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprimt+'/homePagePreviewBeforeSave.png')
+    .pause(2000)
+}
 module.exports =
 {
 	//downloadImages:downloadImages,
@@ -336,5 +350,6 @@ module.exports =
 //homePageTemplate3: homePageTemplate3,
 //verifyMemberSideT3: verifyMemberSideT3
 signInAdmin4: modulecreateSurvey.signIn,
-previewDesktopMobile: previewDesktopMobile
+previewDesktopMobile: previewDesktopMobile,
+verifyBeforeSave: verifyBeforeSave
 }
