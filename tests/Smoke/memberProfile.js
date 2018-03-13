@@ -627,13 +627,13 @@ var connectFbAndTw = function(driver)
 }
 
 module.exports={
-//downloadImages: downloadImages,
-//signinEmail: modulememberSigninEmail.signinEmail, 
-//memberProfilePage: memberProfilePage,
-//generalInfo: generalInfo,
-//personalInfo: personalInfo,
-//shippingInfoCa: shippingInfoCa,
-//shippingInfoUs: shippingInfoUs,
+downloadImages: downloadImages,
+signinEmail: modulememberSigninEmail.signinEmail, 
+memberProfilePage: memberProfilePage,
+generalInfo: generalInfo,
+personalInfo: personalInfo,
+shippingInfoCa: shippingInfoCa,
+shippingInfoUs: shippingInfoUs,
 //memberHistory:memberHistory,
 //memberChangePassword: memberChangePassword,
 //memberSigninNewPassword: memberSigninNewPassword,
@@ -644,7 +644,7 @@ module.exports={
 //signinEmail: modulememberSigninEmail.signinEmail, 
 //memberProfilePage: memberProfilePage,
 //emailAndPassword: emailAndPassword,
-SigningEmail2: SigningEmail2,
-memberProfilePage2: memberProfilePage,
-connectFbAndTw: connectFbAndTw,
+//SigningEmail2: SigningEmail2,
+//memberProfilePage2: memberProfilePage,
+//connectFbAndTw: connectFbAndTw,
 }
