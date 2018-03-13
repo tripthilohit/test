@@ -1,4 +1,5 @@
 var userNames = {
+
   
   memberURL: 'http://tripsprint96a.staging.socialmedialink.com',
   memberEmail: 'subs@yopmail.com',
@@ -7,32 +8,29 @@ var userNames = {
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
+  sprint: '96b',
+  adminURL: 'https://admin.staging.socialmedialink.com',
+  adminEmail: 'tripsprint96a@yopmail.com',
   member2Email:'Jimysnow@yopmail.com',
   member2Password:'general1234',
   member2FirstName:'Jims',
   member2LastName:'Snow',
-
-
   sprint: '96a',
   adminURL: 'https://admin.staging.socialmedialink.com',
   adminEmail: 'tripsprint96a@yopmail.com',
   adminPassword: 'General123$',
-  facebookEmail: 'sukada.testmember8@socialmedialink.com',
-  facebookPass: 'general1234',
-  facebookEmail2: 'vcsjinc_martinazziescu_1454599736@tfbnw.net ',
-  facebookPass2: 'general1234',
-  twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
+  facebookEmail: 'tripthishetty20@gmail.com',
+  facebookPass: 'qwerty$',
+  twitterEmail: 'tripthi.testmember15@socialmedialink.com',
   twitterPass: 'general1234',
-  twitterEmail2: 'tripthi.testmember20@socialmedialink.com',
-  twitterPass2: 'general1234',
-  instagramUserName: 'sukadar',
-  instagramPass: 'general1234',
-  superAdminEmail: 'sukada.ramakrishna@socialmedialink.com',
-  superAdminPass: 'General1234#',
-  account_no: 667,
+  instagramUserName: 'tripthi.shetty',
+  instagramPass: 'abcd1234',
+  superAdminEmail: 'tripthi.testmember3@socialmedialink.com',
+  superAdminPass: 'General123$',
+  account_no: 680,
   path: 'C:/Users/you/Downloads/',
   memberEmailFemale: 'leena@yopmail.com',
-  darDate:"(//td[@class='day'])13",
+  darDate:"(//td[@class='day'])[13]",
   uin:'12553',
   pinterestUserName:'sukadamr',
   usAddressLine1:'6010',
@@ -42,13 +40,8 @@ var userNames = {
   caAddressLine2:'EASY ST',
   caCity:'OTTAWA',
   postalCode:'K1A 0B1',
-  memberNewEmail: 'sukrao17@yopmail.com',
-  memberNewPassword:'12345678',
-
-
-
-
- 
+  memberNewEmail: 'sukrao14@yopmail.com',
+  memberNewPassword:'12345678' 
    };
 var cbt = require('cbt_tunnels');
 
