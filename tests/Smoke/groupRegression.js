@@ -302,7 +302,7 @@ var splitLists = function(driver)
 
 }
 var splitGroup = function(driver)
-+{
+{
     driver
     .useXpath()
     .url("https://admin.staging.socialmedialink.com")
@@ -326,7 +326,8 @@ var splitGroup = function(driver)
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/splitListAfterRefresh.png')
     .pause(4000)
-}var createListAddMembers = function(driver)
+}
+var createListAddMembers = function(driver)
 {
     driver
     .useXpath()
