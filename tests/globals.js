@@ -1,5 +1,4 @@
 var userNames = {
-  
   memberURL: 'https://tripsprint96a.staging.socialmedialink.com',
   memberEmail: 'lolo@yopmail.com',
   memberPassword: '12345678',
@@ -10,6 +9,13 @@ var userNames = {
   sprint: '96b',
   adminURL: 'https://admin.staging.socialmedialink.com',
   adminEmail: 'tripsprint96a@yopmail.com',
+  member2Email:'Jimysnow@yopmail.com',
+  member2Password:'general1234',
+  member2FirstName:'Jims',
+  member2LastName:'Snow',
+  sprint: '96a',
+  adminURL: 'https://admin.staging.socialmedialink.com',
+  adminEmail: 'ser@yopmail.com',
   adminPassword: 'General123$',
   facebookEmail: 'tripthishetty20@gmail.com',
   facebookPass: 'qwerty$',
