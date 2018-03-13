@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="4">
+            tests="5">
 
   <testsuite name="smoke.createBrandConnect"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="4" time="111.9" timestamp="Tue, 27 Feb 2018 19:19:16 GMT">
+    tests="5" time="153.4" timestamp="Mon, 12 Mar 2018 20:39:07 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createBrandConnect" time="46.49" assertions="1">
+    <testcase name="downloadImages" classname="smoke.createBrandConnect" time="51.22" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.createBrandConnect" time="22.12" assertions="0">
+    <testcase name="signIn" classname="smoke.createBrandConnect" time="21.28" assertions="0">
     </testcase>
   
-    <testcase name="createBrandConnectTopic" classname="smoke.createBrandConnect" time="19.84" assertions="0">
+    <testcase name="firstSignin" classname="smoke.createBrandConnect" time="37.29" assertions="0">
     </testcase>
   
-    <testcase name="createBrandConnectDiscussion" classname="smoke.createBrandConnect" time="23.43" assertions="0">
+    <testcase name="createBrandConnectTopic" classname="smoke.createBrandConnect" time="19.76" assertions="0">
+    </testcase>
+  
+    <testcase name="createBrandConnectDiscussion" classname="smoke.createBrandConnect" time="23.86" assertions="0">
     </testcase>
   
 
