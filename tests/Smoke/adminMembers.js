@@ -65,7 +65,9 @@ var memberTab = function(driver)
 .click("//li[@class='mf-option-button']/button")
 .pause(2000)
 .execute('scrollTo(0,5000)')
-//filter by age
+
+
+
 
 
 

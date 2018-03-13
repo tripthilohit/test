@@ -1,188 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="12"
-            failures="1"
+<testsuites errors="7"
+            failures="0"
             tests="7">
 
-  <testsuite name="smoke.downloadAnalytics"
-    errors="12" failures="1" hostname="" id="" package="smoke" skipped="2"
-    tests="7" time="216.7" timestamp="Mon, 26 Feb 2018 21:03:19 GMT">
+  <testsuite name="Smoke.downLoadAnalytics"
+    errors="7" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="7" time="322.4" timestamp="Tue, 13 Mar 2018 14:52:31 GMT">
   
-    <testcase name="downloadImages" classname="smoke.downloadAnalytics" time="33.87" assertions="1">
+    <testcase name="downloadImages" classname="Smoke.downLoadAnalytics" time="34.02" assertions="1">
 
     
     </testcase>
   
-    <testcase name="adminlogin" classname="smoke.downloadAnalytics" time="22.32" assertions="1">
+    <testcase name="adminlogin" classname="Smoke.downLoadAnalytics" time="27.97" assertions="1">
 
     
     </testcase>
   
-    <testcase name="activityMonitoring" classname="smoke.downloadAnalytics" time="34.41" assertions="0">
+    <testcase name="activityMonitoring" classname="Smoke.downLoadAnalytics" time="33.99" assertions="0">
     </testcase>
   
-    <testcase name="OverviewTab" classname="smoke.downloadAnalytics" time="6.337" assertions="0">
+    <testcase name="OverviewTab" classname="Smoke.downLoadAnalytics" time="10.99" assertions="0">
     </testcase>
   
-    <testcase name="downloadAnalytics" classname="smoke.downloadAnalytics" time="119.7" assertions="2">
-
-      <failure message="Timed out while waiting for element &lt;//ul[@id='ui-id-3']/li/a&gt; to be present for 2000 milliseconds.">    at Object.downloadAnalytics (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:203:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at process._tickCallback (internal/process/next_tick.js:150:11)</failure>
+    <testcase name="downloadAnalytics" classname="Smoke.downLoadAnalytics" time="147.4" assertions="1">
 
     
+    </testcase>
+  
+    <testcase name="downloadAnalyticsPreviewButton" classname="Smoke.downLoadAnalytics" time="3.577" assertions="0">
+    </testcase>
+  
+    <testcase name="downloadAnalyticsPreview" classname="Smoke.downLoadAnalytics" time="64.45" assertions="0">
     </testcase>
   
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[4]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:62:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[7]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:64:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[10]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:66:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[13]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:68:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[16]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:70:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[19]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:72:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[22]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:74:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[25]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:76:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[28]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:78:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[31]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:80:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[34]&quot; using: xpath
-    at Object.activityMonitoring (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:82:4)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+      ERROR: Unable to locate element: &quot;(//div[@class='grid '])[1]/div[2]/div[1]&quot; using: xpath
+    at Object.downloadImages (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:15:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//label[@for='photo_download_quality_standard']&quot; using: xpath
+    at Object.downloadImages (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:17:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
 ERROR: Unable to locate element: &quot;//td[@class='active day']/preceeding-sibling::td[@class='day'][1]&quot; using: xpath
-    at Object.downloadAnalytics (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadAnalytics.js:107:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:107:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//td[@class='day'])13&quot; using: xpath
+    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:194:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//ul[@id='ui-id-3']/li/a&quot; using: xpath
+    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:204:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//button[@ng-click='ctrl.add(share)'])[7]&quot; using: xpath
+    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:221:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//button[@ng-click='ctrl.add(share)'])[6]&quot; using: xpath
+    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:227:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
     </system-err>
   
 
-  
-    
-    <testcase
-      name="downloadAnalyticsPreviewButton" classname="smoke.downloadAnalytics">
-      <skipped />
-    </testcase>
-    
-    <testcase
-      name="downloadAnalyticsPreview" classname="smoke.downloadAnalytics">
-      <skipped />
-    </testcase>
-    
   
   </testsuite>
 </testsuites>

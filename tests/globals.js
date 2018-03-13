@@ -1,7 +1,7 @@
 var userNames = {
   
-  memberURL: 'https://suksprint95k.staging.socialmedialink.com/',
-  memberEmail: 'robs@yopmail.com',
+  memberURL: 'http://tripsprint96a.staging.socialmedialink.com',
+  memberEmail: 'subs@yopmail.com',
   memberPassword: 'general1234',
   memberFirstName: 'first',
   memberLastName: 'last',
@@ -15,7 +15,7 @@ var userNames = {
 
   sprint: '96a',
   adminURL: 'https://admin.staging.socialmedialink.com',
-  adminEmail: 'ser@yopmail.com',
+  adminEmail: 'tripsprint96a@yopmail.com',
   adminPassword: 'General123$',
   facebookEmail: 'sukada.testmember8@socialmedialink.com',
   facebookPass: 'general1234',
@@ -32,8 +32,8 @@ var userNames = {
   account_no: 667,
   path: 'C:/Users/you/Downloads/',
   memberEmailFemale: 'leena@yopmail.com',
-  darDate:"(//td[@class='day'])[27]",
-  uin:'12448',
+  darDate:"(//td[@class='day'])13",
+  uin:'12553',
   pinterestUserName:'sukadamr',
   usAddressLine1:'6010',
   usAddressLine2:'Boulevard East',
