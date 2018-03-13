@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="3">
+            tests="2">
 
   <testsuite name="smoke.homePageRegression"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="3" time="102.3" timestamp="Fri, 09 Mar 2018 21:14:13 GMT">
+    tests="2" time="123.1" timestamp="Tue, 13 Mar 2018 18:42:22 GMT">
   
-    <testcase name="signInAdmin4" classname="smoke.homePageRegression" time="29.82" assertions="0">
+    <testcase name="signInAdmin" classname="smoke.homePageRegression" time="24.48" assertions="0">
     </testcase>
   
-    <testcase name="previewDesktopMobile" classname="smoke.homePageRegression" time="64.86" assertions="0">
-    </testcase>
-  
-    <testcase name="verifyBeforeSave" classname="smoke.homePageRegression" time="7.666" assertions="0">
+    <testcase name="previewDesktopMobile" classname="smoke.homePageRegression" time="98.60" assertions="0">
     </testcase>
   
 

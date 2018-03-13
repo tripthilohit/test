@@ -282,45 +282,103 @@ var previewDesktopMobile = function(driver)
 	//click home page link
 	.click("//a[@href='/accounts/home_page']")
 	.pause(3000)
+
 	//click template 3
 	.click("(//ul[@class='homepage-layout']/li/label)[3]")
 	.pause(1000)
 	//preview desktop for template 3
 	.click("(//a[@class='btn btn-cancel'])[1]")
 	.pause(4000)
+	//switch from admin to preview desktop screen t3
+	.window_handles(function(result) {
+    var handle = result.value[1];
+    this.switchWindow(handle);})
+    .windowMaximize("current")
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageDesktopPreviewT3.png')
     .pause(2000)
+    //switch from preview desktop to admin screen t3
+    .window_handles(function(result) {
+    var handle = result.value[0];
+    this.switchWindow(handle);})
     //preview mobile for template 3
 	.click("(//a[@class='btn btn-cancel'])[2]")
-	.pause(4000)
+	.pause(2000)
+	//switch from admin to preview mobile screen t3
+	.window_handles(function(result) {
+    var handle = result.value[2];
+    this.switchWindow(handle);})
+    .pause(2000)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageMobilePreviewT3.png')
    	.pause(2000)
+   	//switch from preview mobile to admin screen t3
+   	.window_handles(function(result) {
+    var handle = result.value[0];
+    this.switchWindow(handle);})
+
    	//click template 2
 	.click("(//ul[@class='homepage-layout']/li/label)[2]")
 	.pause(1000)
    	//preview desktop for template 2
 	.click("(//a[@class='btn btn-cancel'])[1]")
-	.pause(4000)
-	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageDesktopPreviewT3.png')
+	.pause(2000)
+	//switch from admin to preview desktop screen t2
+	.window_handles(function(result) {
+    var handle = result.value[3];
+    this.switchWindow(handle);})
+    .windowMaximize("current")
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageDesktopPreviewT2.png')
     .pause(2000)
+    //switch from preview desktop to admin screen t2
+    .window_handles(function(result) {
+    var handle = result.value[0];
+    this.switchWindow(handle);})
     //preview mobile for template 2
 	.click("(//a[@class='btn btn-cancel'])[2]")
 	.pause(4000)
-	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageMobilePreviewT3.png')
+	//switch from admin to preview mobile t2
+	.window_handles(function(result) {
+    var handle = result.value[4];
+    this.switchWindow(handle);})
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageMobilePreviewT2.png')
    	.pause(2000)
+   	//switch drom preview mobile to admin t2
+   	.window_handles(function(result) {
+    var handle = result.value[0];
+    this.switchWindow(handle);})
+
    	//click template 1
 	.click("(//ul[@class='homepage-layout']/li/label)[1]")
 	.pause(1000)
    	//preview desktop for template 1
 	.click("(//a[@class='btn btn-cancel'])[1]")
 	.pause(4000)
-	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageDesktopPreviewT3.png')
+	//switch from admin to preview desktop t1
+	.window_handles(function(result) {
+    var handle = result.value[5];
+    this.switchWindow(handle);})
+    .windowMaximize("current")
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageDesktopPreviewT1.png')
+    .pause(2000)
+    //switch from preview desktop to admin t1
+    .window_handles(function(result) {
+    var handle = result.value[0];
+    this.switchWindow(handle);})
     .pause(2000)
     //preview mobile for template 1
 	.click("(//a[@class='btn btn-cancel'])[2]")
 	.pause(4000)
-	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageMobilePreviewT3.png')
+	//switch from admin to preview mobile t1
+	.window_handles(function(result) {
+    var handle = result.value[6];
+    this.switchWindow(handle);})
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePageMobilePreviewT1.png')
    	.pause(2000)
+   	//switch from preview mobile to admin t1
+   	.window_handles(function(result) {
+    var handle = result.value[0];
+    this.switchWindow(handle);})
+    .pause(1000)
+
    	//logout
     .click("//button[@class='topbar-menu-toggle test-nav-user']")
     .pause(1000)
@@ -339,17 +397,18 @@ var verifyBeforeSave = function(driver)
 }
 module.exports =
 {
+	
 	//downloadImages:downloadImages,
-	//signInAdmin: modulecreateSurvey.signIn,
-//homePageTemplate1: homePageTemplate1,
-//verifyMemberSideT1: verifyMemberSide,
-//signInAdmin2: modulecreateSurvey.signIn,
-//homePageTemplate2: homePageTemplate2,
-//verifyMemberSideT2: verifyMemberSideT2,
-//signInAdmin3: modulecreateSurvey.signIn,
-//homePageTemplate3: homePageTemplate3,
-//verifyMemberSideT3: verifyMemberSideT3
-signInAdmin4: modulecreateSurvey.signIn,
+	signInAdmin: modulecreateSurvey.signIn,
+/*homePageTemplate1: homePageTemplate1,
+verifyMemberSideT1: verifyMemberSideT1,
+signInAdmin2: modulecreateSurvey.signIn,
+homePageTemplate2: homePageTemplate2,
+verifyMemberSideT2: verifyMemberSideT2,
+signInAdmin3: modulecreateSurvey.signIn,
+homePageTemplate3: homePageTemplate3,
+verifyMemberSideT3: verifyMemberSideT3,
+signInAdmin4: modulecreateSurvey.signIn,*/
 previewDesktopMobile: previewDesktopMobile,
-verifyBeforeSave: verifyBeforeSave
+//verifyBeforeSave: verifyBeforeSave
 }

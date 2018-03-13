@@ -7,13 +7,11 @@ var userNames = {
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
+  sprint: '96b',
   member2Email:'Jimysnow@yopmail.com',
   member2Password:'general1234',
   member2FirstName:'Jims',
   member2LastName:'Snow',
-
-
-  sprint: '96a',
   adminURL: 'https://admin.staging.socialmedialink.com',
   adminEmail: 'tripsprint96a@yopmail.com',
   adminPassword: 'General123$',
@@ -32,8 +30,12 @@ var userNames = {
   account_no: 667,
   path: 'C:/Users/you/Downloads/',
   memberEmailFemale: 'leena@yopmail.com',
-  darDate:"(//td[@class='day'])13",
-  uin:'12553',
+  darDate:"(//td[@class='day'])[13]",
+  uin:'12448',
+  member2Email:'Jimysnow@yopmail.com',
+  member2Password:'general1234',
+  member2FirstName:'Jims',
+  member2LastName:'Snow',
   pinterestUserName:'sukadamr',
   usAddressLine1:'6010',
   usAddressLine2:'Boulevard East',
@@ -44,11 +46,6 @@ var userNames = {
   postalCode:'K1A 0B1',
   memberNewEmail: 'sukrao17@yopmail.com',
   memberNewPassword:'12345678',
-
-
-
-
- 
    };
 var cbt = require('cbt_tunnels');
 
