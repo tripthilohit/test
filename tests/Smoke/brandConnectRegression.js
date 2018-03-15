@@ -795,6 +795,7 @@ var createPrivateDiscussion = function(driver)
     .click("//div[@id='s2id_discussion_limiter_id']")
     .pause(1000)
     .setValue("//input[@id='s2id_autogen1_search']","Male")
+    .pause(2000)
     .keys(driver.Keys.ENTER)
     .pause(2000)
     //add discussion message
@@ -894,7 +895,7 @@ verifyMemberDiscussionOnApproval: verifyMemberDiscussionOnApproval,
 signInAdmin2: modulecreateBrandConnect.signIn,         //signin to member application as an admin again to hide comment
 hideComment: hideComment,
 signinMember3: modulememberSigninEmail.signinEmail,
-verifyHideComment: verifyHideComment
+verifyHideComment: verifyHideComment,
 signInAdmin3: modulecreateBrandConnect.signIn,
 createPrivateDiscussion: createPrivateDiscussion,
 signinMember4: modulememberSigninEmail.signinEmail,

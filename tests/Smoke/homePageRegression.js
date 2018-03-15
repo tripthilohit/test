@@ -395,12 +395,18 @@ var verifyBeforeSave = function(driver)
 	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/homePagePreviewBeforeSave.png')
     .pause(2000)
 }
+var hideFunctionMobile = function(driver)
+{
+	driver
+	.useXpath()
+	//
+}
 module.exports =
 {
 	
-	//downloadImages:downloadImages,
+	downloadImages:downloadImages,
 	signInAdmin: modulecreateSurvey.signIn,
-/*homePageTemplate1: homePageTemplate1,
+homePageTemplate1: homePageTemplate1,
 verifyMemberSideT1: verifyMemberSideT1,
 signInAdmin2: modulecreateSurvey.signIn,
 homePageTemplate2: homePageTemplate2,
@@ -408,7 +414,7 @@ verifyMemberSideT2: verifyMemberSideT2,
 signInAdmin3: modulecreateSurvey.signIn,
 homePageTemplate3: homePageTemplate3,
 verifyMemberSideT3: verifyMemberSideT3,
-signInAdmin4: modulecreateSurvey.signIn,*/
+signInAdmin4: modulecreateSurvey.signIn,
 previewDesktopMobile: previewDesktopMobile,
-//verifyBeforeSave: verifyBeforeSave
+verifyBeforeSave: verifyBeforeSave
 }

@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="13">
 
   <testsuite name="smoke.homePageRegression"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="2" time="123.1" timestamp="Tue, 13 Mar 2018 18:42:22 GMT">
+    tests="13" time="432.3" timestamp="Tue, 13 Mar 2018 20:38:04 GMT">
   
-    <testcase name="signInAdmin" classname="smoke.homePageRegression" time="24.48" assertions="0">
+    <testcase name="downloadImages" classname="smoke.homePageRegression" time="69.64" assertions="1">
+
+    
     </testcase>
   
-    <testcase name="previewDesktopMobile" classname="smoke.homePageRegression" time="98.60" assertions="0">
+    <testcase name="signInAdmin" classname="smoke.homePageRegression" time="19.70" assertions="0">
+    </testcase>
+  
+    <testcase name="homePageTemplate1" classname="smoke.homePageRegression" time="118.1" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyMemberSideT1" classname="smoke.homePageRegression" time="37.90" assertions="0">
+    </testcase>
+  
+    <testcase name="signInAdmin2" classname="smoke.homePageRegression" time="10.55" assertions="0">
+    </testcase>
+  
+    <testcase name="homePageTemplate2" classname="smoke.homePageRegression" time="23.77" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyMemberSideT2" classname="smoke.homePageRegression" time="11.04" assertions="0">
+    </testcase>
+  
+    <testcase name="signInAdmin3" classname="smoke.homePageRegression" time="9.668" assertions="0">
+    </testcase>
+  
+    <testcase name="homePageTemplate3" classname="smoke.homePageRegression" time="23.99" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyMemberSideT3" classname="smoke.homePageRegression" time="8.344" assertions="0">
+    </testcase>
+  
+    <testcase name="signInAdmin4" classname="smoke.homePageRegression" time="9.877" assertions="0">
+    </testcase>
+  
+    <testcase name="previewDesktopMobile" classname="smoke.homePageRegression" time="81.79" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyBeforeSave" classname="smoke.homePageRegression" time="8.014" assertions="0">
     </testcase>
   
 
