@@ -5,14 +5,14 @@
 
   <testsuite name="smoke.createActivity"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="2" time="420.4" timestamp="Tue, 13 Mar 2018 20:02:16 GMT">
+    tests="2" time="501.8" timestamp="Fri, 16 Mar 2018 14:20:50 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createActivity" time="38.61" assertions="1">
+    <testcase name="downloadImages" classname="smoke.createActivity" time="42.99" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Creating an activity" classname="smoke.createActivity" time="381.8" assertions="3">
+    <testcase name="Creating an activity" classname="smoke.createActivity" time="458.9" assertions="3">
 
     
 

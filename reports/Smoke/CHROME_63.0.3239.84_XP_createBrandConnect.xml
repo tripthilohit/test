@@ -5,23 +5,23 @@
 
   <testsuite name="smoke.createBrandConnect"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="5" time="151.0" timestamp="Tue, 13 Mar 2018 19:59:12 GMT">
+    tests="5" time="155.2" timestamp="Fri, 16 Mar 2018 14:14:28 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createBrandConnect" time="44.68" assertions="1">
+    <testcase name="downloadImages" classname="smoke.createBrandConnect" time="40.68" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.createBrandConnect" time="24.98" assertions="0">
+    <testcase name="signIn" classname="smoke.createBrandConnect" time="23.82" assertions="0">
     </testcase>
   
-    <testcase name="firstSignin" classname="smoke.createBrandConnect" time="30.72" assertions="0">
+    <testcase name="firstSignin" classname="smoke.createBrandConnect" time="39.42" assertions="0">
     </testcase>
   
-    <testcase name="createBrandConnectTopic" classname="smoke.createBrandConnect" time="29.43" assertions="0">
+    <testcase name="createBrandConnectTopic" classname="smoke.createBrandConnect" time="25.86" assertions="0">
     </testcase>
   
-    <testcase name="createBrandConnectDiscussion" classname="smoke.createBrandConnect" time="21.22" assertions="0">
+    <testcase name="createBrandConnectDiscussion" classname="smoke.createBrandConnect" time="25.44" assertions="0">
     </testcase>
   
 

@@ -5,14 +5,14 @@
 
   <testsuite name="smoke.createSurvey"
     errors="1" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="4" time="213.6" timestamp="Tue, 13 Mar 2018 14:34:42 GMT">
+    tests="4" time="231.8" timestamp="Fri, 16 Mar 2018 15:07:50 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createSurvey" time="37.97" assertions="1">
+    <testcase name="downloadImages" classname="smoke.createSurvey" time="57.25" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.createSurvey" time="20.98" assertions="0">
+    <testcase name="signIn" classname="smoke.createSurvey" time="21.05" assertions="0">
     </testcase>
   
     <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="132.1" assertions="1">
@@ -20,7 +20,7 @@
     
     </testcase>
   
-    <testcase name="missionLogic" classname="smoke.createSurvey" time="22.54" assertions="1">
+    <testcase name="missionLogic" classname="smoke.createSurvey" time="21.34" assertions="1">
 
     
     </testcase>
