@@ -1,4 +1,5 @@
 var modulecreateSurvey=require('./createSurvey.js')
+
 //Navigate to members tab
 var memberTab = function(driver)
 {
@@ -7,6 +8,12 @@ var memberTab = function(driver)
 //Navigate to Members Tab
 .click("//ul[@class='navbar-nav']/li[3]")
 .pause(2000)
+}
+
+var memberFilters = function(driver)
+{
+  driver
+.useXpath()
 //Filter by Group
 .click("//div[@class='dropdown-select ng-pristine ng-valid']")
 .pause(2000)
@@ -200,14 +207,113 @@ var memberTab = function(driver)
 .pause(2000)
 .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberCountryimage.png')
 .execute('scrollTo(0,5000)')
-
-
+//filter by id
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[15]")
+.pause(2000)
+//Enter id
+.click("//input[@ng-model='item.data.value']")
+.pause(2000)
+.setValue("//input[@ng-model='item.data.value']",driver.globals.userNames.memberId)
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMembermemberIdimage.png')
+.execute('scrollTo(0,5000)')
+//filter by Active Status
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[16]")
+.pause(2000)
+//Select - Active
+.click("(//label[@for='checkbox_active_active'])[1]")
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberActiveimage.png')
+.execute('scrollTo(0,5000)')
+//filter by Member Flags
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[19]")
+.pause(2000)
+//Select a flag
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[1]")
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberMemberFlagimage.png')
+.execute('scrollTo(0,5000)')
+}
+var adminMemberHistory = function(driver)
+{
+  driver
+.useXpath()
+//filter by email
+.click("//div[@class='dropdown-select ng-pristine ng-valid']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[4]")
+.pause(2000)
+//Enter Email
+.click("//input[@class='filter-field ng-pristine ng-valid']")
+.pause(2000)
+.setValue("//input[@class='filter-field ng-pristine ng-valid']",driver.globals.userNames.memberEmail)
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+//click a member
+.click("(//td[@class='table-title test-members-link'])[1]/a[1]")
+.pause(2000)
+//click Edit
+.click("//a[@class='btn btn-default test-member-edit-link']")
+.pause(2000)
+//Edit Gender
+.click("(//label[@class='control-radio'])[4]")
+.pause(2000)
+//Edit DOB
+.click("//div[@class='form-control-wrapper']/input")
+.pause(2000)
+.click("//td[@class='active day']/preceding-sibling::td[@class='day'][1]")
+.pause(2000)
+//Edit Race
+.click("(//label[@class='control-checkbox'])[4]")
+.pause(2000)
+//Edit Address
+.click("(//div[@class='col-md-7'])[10]/input")
+.pause(2000)
+.setValue("(//div[@class='col-md-7'])[10]/input",driver.globals.userNames.usAddressLine1)
+.pause(2000)
+.click("(//div[@class='col-md-7'])[11]/input")
+.pause(2000)
+.setValue("(//div[@class='col-md-7'])[11]/input",driver.globals.userNames.usAddressLine2)
+.pause(2000)
+.click("(//div[@class='col-md-7'])[12]/input")
+.pause(2000)
+.setValue("(//div[@class='col-md-7'])[12]/input",driver.globals.userNames.usCity)
+.pause(2000)
+.click("(//div[@class='col-md-7'])[14]/input")
+.pause(2000)
+.clearValue("(//div[@class='col-md-7'])[14]/input")
+.pause(2000)
+.setValue("(//div[@class='col-md-7'])[14]/input",driver.globals.userNames.zipCode)
+.pause(2000)
+//click Save
+.execute('scrollTo(200,0)')
+.pause(2000)
+.click("//div[@class='tabs-buttons']/button")
+.pause(2000)
 }
 
 
 module.exports={
 
 signIn: modulecreateSurvey.signIn,
-memberTab: memberTab
-
+memberTab: memberTab,
+memberFilters: memberFilters
+adminMemberHistory: adminMemberHistory
 }
