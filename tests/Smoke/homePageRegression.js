@@ -399,13 +399,73 @@ var hideFunctionMobile = function(driver)
 {
 	driver
 	.useXpath()
-	//
+	//click administration
+	.click("(//a[@class='test-nav-config'])[2]")
+	.pause(3000)
+	//click home page link
+	.click("//a[@href='/accounts/home_page']")
+	.pause(3000)
+	//click to hide splah headline and description
+	.click("//input[@ng-model='home_page_theme.hide_splash_on_mobile_view']")
+	.pause(1000)
+	//scroll down
+	.execute('scrollTo(250,250)')
+	//click to hide login headline and description
+	.click("//input[@ng-model='home_page_theme.hide_login_on_mobile_view']")
+	.pause(1000)
+	//click to hide Lohgin with 
+	.click("//input[@ng-model='home_page_theme.hide_login_with_on_mobile_view']")
+	.pause(1000)
+	//click to hide create account headline and description
+	.click("//input[@ng-model='home_page_theme.hide_create_account_on_mobile_view']")
+	.pause(1000)
+	//click to hide create account with
+	.click("//input[@ng-model='home_page_theme.hide_create_account_with_on_mobile_view']")
+	.pause(1000)
+	//save
+	.execute('scrollTo(0,0)')
+	.pause(2000)
+	.click("//a[@class='btn btn-default']")
+	.pause(4000)
+}
+var verifyHideFunctionMobile = function(driver)
+{
+	driver
+	.useXpath()
+	//preview mobile
+	.click("(//a[@class='btn btn-cancel'])[2]")
+	.pause(2000)
+	//switch to preview mobile frame
+    .window_handles(function(result) {
+    var handle = result.value[1];
+    this.switchWindow(handle);})
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileSplashHeadline.png')
+    .pause(2000)
+    .click("(//a[@class='btn login themed-button'])[2]")
+    .pause(1000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileLoginHeadlineDescription.png')
+    .pause(2000)
+    .click("(//div[contains(text(),'Email')])[6]")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileLoginWithHeadlineHeadline.png')
+    .pause(2000)
+    .click("(//a[contains(text(),'Create an Account')])[6]")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileCreateAccountHeadlineHeadline.png')
+    .pause(2000)
+    .click("(//div[contains(text(),'Email')])[6]")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileCreateAccountWithHeadlineHeadline.png')
+    .pause(2000)
+
 }
 module.exports =
 {
 	
-	downloadImages:downloadImages,
+	//downloadImages:downloadImages,
 	signInAdmin: modulecreateSurvey.signIn,
+	/*
 homePageTemplate1: homePageTemplate1,
 verifyMemberSideT1: verifyMemberSideT1,
 signInAdmin2: modulecreateSurvey.signIn,
@@ -417,4 +477,7 @@ verifyMemberSideT3: verifyMemberSideT3,
 signInAdmin4: modulecreateSurvey.signIn,
 previewDesktopMobile: previewDesktopMobile,
 verifyBeforeSave: verifyBeforeSave
+*/
+hideFunctionMobile: hideFunctionMobile,
+verifyHideFunctionMobile: verifyHideFunctionMobile
 }
