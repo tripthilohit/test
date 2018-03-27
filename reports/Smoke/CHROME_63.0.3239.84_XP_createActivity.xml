@@ -3,16 +3,16 @@
             failures="0"
             tests="2">
 
-  <testsuite name="smoke.createActivity"
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="2" time="501.8" timestamp="Fri, 16 Mar 2018 14:20:50 GMT">
+  <testsuite name="Smoke.createActivity"
+    errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="2" time="592.1" timestamp="Tue, 20 Mar 2018 14:09:51 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createActivity" time="42.99" assertions="1">
+    <testcase name="downloadImages" classname="Smoke.createActivity" time="46.31" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Creating an activity" classname="smoke.createActivity" time="458.9" assertions="3">
+    <testcase name="Creating an activity" classname="Smoke.createActivity" time="545.8" assertions="3">
 
     
 

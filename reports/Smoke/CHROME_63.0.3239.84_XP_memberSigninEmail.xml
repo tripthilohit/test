@@ -3,21 +3,11 @@
             failures="0"
             tests="1">
 
-<<<<<<< HEAD
-  <testsuite name="smoke.memberSigninEmail"
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="1" time="43.42" timestamp="Tue, 13 Feb 2018 19:53:05 GMT">
-  
-    <testcase name="signinEmail" classname="smoke.memberSigninEmail" time="43.42" assertions="0">
-=======
   <testsuite name="Smoke.memberSigninEmail"
     errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
-    tests="1" time="31.85" timestamp="Wed, 14 Feb 2018 19:19:05 GMT">
+    tests="1" time="31.56" timestamp="Tue, 27 Mar 2018 01:27:34 GMT">
   
-    <testcase name="Sign in via email" classname="Smoke.memberSigninEmail" time="31.85" assertions="1">
-
-    
->>>>>>> tests/tri_bc_regression1
+    <testcase name="signinEmail" classname="Smoke.memberSigninEmail" time="31.56" assertions="0">
     </testcase>
   
 

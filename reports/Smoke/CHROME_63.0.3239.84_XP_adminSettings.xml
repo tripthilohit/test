@@ -3,25 +3,25 @@
             failures="0"
             tests="5">
 
-  <testsuite name="smoke.adminSettings"
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="5" time="205.1" timestamp="Tue, 13 Mar 2018 19:29:35 GMT">
+  <testsuite name="Smoke.adminSettings"
+    errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="5" time="259.8" timestamp="Tue, 27 Mar 2018 11:20:00 GMT">
   
-    <testcase name="signIn" classname="smoke.adminSettings" time="39.18" assertions="1">
+    <testcase name="signIn" classname="Smoke.adminSettings" time="44.45" assertions="1">
 
     
     </testcase>
   
-    <testcase name="addDataSet1" classname="smoke.adminSettings" time="62.86" assertions="0">
+    <testcase name="addDataSet1" classname="Smoke.adminSettings" time="59.04" assertions="0">
     </testcase>
   
-    <testcase name="addDataSet2" classname="smoke.adminSettings" time="74.32" assertions="0">
+    <testcase name="addDataSet2" classname="Smoke.adminSettings" time="114.5" assertions="0">
     </testcase>
   
-    <testcase name="addDataSet3" classname="smoke.adminSettings" time="24.29" assertions="0">
+    <testcase name="addDataSet3" classname="Smoke.adminSettings" time="37.06" assertions="0">
     </testcase>
   
-    <testcase name="saveSettings" classname="smoke.adminSettings" time="4.464" assertions="0">
+    <testcase name="saveSettings" classname="Smoke.adminSettings" time="4.784" assertions="0">
     </testcase>
   
 

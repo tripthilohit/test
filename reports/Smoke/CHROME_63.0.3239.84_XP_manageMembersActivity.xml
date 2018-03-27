@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="3">
+
+  <testsuite name="Smoke.manageMembersActivity"
+    errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="3" time="385.9" timestamp="Wed, 21 Mar 2018 18:06:29 GMT">
+  
+    <testcase name="downloadImages" classname="Smoke.manageMembersActivity" time="67.55" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="signIn" classname="Smoke.manageMembersActivity" time="29.10" assertions="0">
+    </testcase>
+  
+    <testcase name="activity" classname="Smoke.manageMembersActivity" time="289.3" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
