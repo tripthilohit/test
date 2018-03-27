@@ -1,39 +1,5 @@
 
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download brand connect image
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='blue beach waves']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-    //download survey badge
-    .url("https://burst.shopify.com/")
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='beach pals']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
-
-
+var moduledownloadImages = require('./downloadImages.js')
 var modulecreateBrandConnect = require('./createBrandConnect.js')
 var modulememberSigninEmail = require('./memberSigninEmail.js')
 var modulecreateSurvey = require('./createSurvey.js')
@@ -188,7 +154,7 @@ var memberCommentReply = function(driver)
     .setValue("(//textarea[@ng-model='comment.text'])[1]","member comment 1")
     .pause(500)
     //upload picture
-    .setValue("//div[@class='bconnect-new-post-attach']/input", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//div[@class='bconnect-new-post-attach']/input", driver.globals.userNames.path + "26178156117_66bec49a72_o.jpg")
     .pause(2000)
     //scroll
     .execute('scrollTo(2000,2000)')
@@ -554,8 +520,8 @@ var enableMemberDiscussion = function(driver)
     .click("//div[@class='col-md-4'][2]/div[5]/div/div[1]/div[2]/div/div[2]/span/input")
     .pause(2000)
     //enable admin moderation
-    .click("//div[@class='col-md-4'][2]/div[5]/div/div[2]/div[2]/div/div[2]/span/input")
-    .pause(2000)
+    //.click("//div[@class='col-md-4'][2]/div[5]/div/div[2]/div[2]/div/div[2]/span/input")
+    //.pause(2000)
     //scroll to the top
     .execute('scrollTo(100,100)')
     //save
@@ -597,7 +563,7 @@ var createMemberDiscussion = function(driver)
     .setValue("//textarea[@id='discussion_first_comment_attributes_text']","description for discussion created by a member.description for discussion created by a member.")
     .pause(1000)
     //Upload image to the discussion
-    .setValue("//input[@data-attachment='CommentPicture']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@data-attachment='CommentPicture']", driver.globals.userNames.path + "26178156117_66bec49a72_o.jpg")
     .pause(2000)
     //submit
     .click("//input[@value='Create Discussion']")
@@ -775,7 +741,7 @@ var createPrivateDiscussion = function(driver)
     .click("//a[@href='/brand_connect/topics/new']")
     .pause(3000)
     //Upload brand connect topic image
-    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "26178156117_66bec49a72_o.jpg")
     .pause(2000)
     //add topic title
     .click("//input[@id='topic_title']")
@@ -841,7 +807,7 @@ var verifyPrivateDiscussionFemale = function(driver)
      //logout
     .click("//a[@class='header-logout']")
     .pause(3000)
-
+    .end()
 }
 var signinFemale = function(driver)
 {
@@ -871,7 +837,8 @@ var signinFemale = function(driver)
 
 }
 module.exports={
-    downloadImages: downloadImages,
+    loginFlikr: moduledownloadImages.loginFlikr,
+    brandConnectMemberImageDownload: moduledownloadImages.brandConnectMemberImageDownload,
   signIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
 createBrandConnectTopic: modulecreateBrandConnect.createBrandConnectTopic,
 createBrandConnectDiscussion: modulecreateBrandConnect.createBrandConnectDiscussion,

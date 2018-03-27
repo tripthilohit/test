@@ -1,25 +1,6 @@
 
 
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download survey badge
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='blue beach waves']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
+var moduledownloadImages = require('./downloadImages.js')
 
 var signIn =  function(driver)
   {
@@ -84,7 +65,7 @@ var clickAdminLinks = function(driver)
     .click("(//button[@class='btn btn-primary q-list-done'])[1]")
     //add badge
     .click("(//div[@class='q-list-link q-list-reward'])[2]")
-    .setValue("//input[@class='js-badge-image-field']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@class='js-badge-image-field']", driver.globals.userNames.path + "41048785701_18c40b237f_o.jpg")
     .pause(2000)
     .click("//textarea[@class='form-control q-list-badge-name test-activity-badge-name ng-pristine ng-valid placeholder']")
     .setValue("//textarea[@class='form-control q-list-badge-name test-activity-badge-name ng-pristine ng-valid placeholder']","survey badge name")
@@ -293,9 +274,11 @@ var missionLogic =  function(driver)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/missionLogicSaved.png')
     .assert.visible("//button[@class='btn btn-default pull-right test-hub-logic-save']")
     .pause(2000)
+    .end()
   }
 module.exports={
-downloadImages: downloadImages,
+loginFlikr: moduledownloadImages.loginFlikr,
+    surveyBadgeDownload: moduledownloadImages.surveyBadgeDownload,
   signIn: signIn,
   clickAdminLinks: clickAdminLinks,
   missionLogic: missionLogic

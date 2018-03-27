@@ -369,6 +369,7 @@ var createListAddMembers = function(driver)
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createListAddMembers.png')
     .pause(2000)
+    .end()
 }
 module.exports = {
     downloadList: downloadList,

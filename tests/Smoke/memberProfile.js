@@ -627,6 +627,7 @@ var connectFbAndTw = function(driver)
 .pause(2000)
 .click("//div[@class='text-center']/a")
 .pause(2000)
+.end()
 }
 
 module.exports={
@@ -644,10 +645,19 @@ memberProfilePage1: memberProfilePage,
 deactivateAccount: deactivateAccount,
 signIn: modulecreateSurvey.signIn,
 adminMember: adminMember,
+<<<<<<< HEAD
 //signinEmail: modulememberSigninEmail.signinEmail, 
 //memberProfilePage: memberProfilePage,
 //emailAndPassword: emailAndPassword,
 SigningEmail2: SigningEmail2,
 memberProfilePage2: memberProfilePage,
 connectFbAndTw: connectFbAndTw
+=======
+signinEmail: modulememberSigninEmail.signinEmail, 
+memberProfilePage: memberProfilePage,
+emailAndPassword: emailAndPassword,
+SigningEmail2: SigningEmail2,
+memberProfilePage2: memberProfilePage,
+connectFbAndTw: connectFbAndTw,
+>>>>>>> 2dacb16
 }

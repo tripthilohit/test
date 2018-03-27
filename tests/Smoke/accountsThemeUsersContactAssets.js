@@ -1,53 +1,5 @@
 
-
-
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download admin account logo
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    //.click("(//div[@class='grid '])[1]/div[2]/div[1]")
-    .click("//img[@alt='blue beach waves']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-    //download account logo
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='beach pals']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-    //download favicon
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='grassy beach shade']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
+var moduledownloadImages = require('./downloadImages.js')
 
 var signIn =  function(driver)
   {
@@ -87,7 +39,7 @@ var signIn =  function(driver)
     //Upload account logo
     //.uploadLocalFile(driver.globals.userNames.path + 'adminAccountLogo.png', "//input[@id='account-logo']" )
     //.setValue("//input[@id='account-logo']", driver.globals.userNames.path + 'adminAccountLogo.png')
-    .setValue("//input[@id='account-logo']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@id='account-logo']", driver.globals.userNames.path + "41048785471_78a1712ced_o.png")
     .pause(4000)
     .click("//textarea[@ng-model='edited_account.name']")
     .clearValue("//textarea[@ng-model='edited_account.name']")
@@ -112,7 +64,7 @@ var signIn =  function(driver)
     .click("(//button[@class='btn-trash-photo'])[1]")  
     .pause(500) 
     //Upload custom theme
-    .setValue("//input[@class='background-field']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@class='background-field']", driver.globals.userNames.path + "41048785611_28841c877f_o.jpg")
     .pause(1000)
     //disable tiled background
     .click("//input[@id='switch_cb_theme.settings.style_background_tiled']")
@@ -138,16 +90,16 @@ var signIn =  function(driver)
     .setValue("//input[@ng-model='theme.settings.style_background_color']","#ebe8e5")
     .pause(500)
     //Upload account logo
-    .setValue("//input[@class='logo-field']", driver.globals.userNames.path + "beach-pals_925x.jpg")
+    .setValue("//input[@class='logo-field']", driver.globals.userNames.path + "27177269168_38479996c7_o.png")
     .pause(2000)
     //upload login logo
-    .setValue("//input[@class='login_logo-field']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@class='login_logo-field']", driver.globals.userNames.path + "27177269248_175d86e6f2_o.png")
     .pause(2000)
     //upload footer logo
-    .setValue("//input[@class='footer_logo-field']", driver.globals.userNames.path + "grassy-beach-shade_925x.jpg")
+    .setValue("//input[@class='footer_logo-field']", driver.globals.userNames.path + "41048785571_f5607df05c_o.gif")
     .pause(2000)
     //upload account favicon
-    .setValue("//input[@class='favicon-field']", driver.globals.userNames.path + "grassy-beach-shade_925x.jpg")
+    .setValue("//input[@class='favicon-field']", driver.globals.userNames.path + "41048785521_3ea7cf7e5f_o.png")
     .pause(8000)
     //save
     .click("//button[@ng-click='save()']")
@@ -428,7 +380,7 @@ var signIn =  function(driver)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyAboutUs.png')
     .click("(//i[@class='fa fa-times dialog-close'])[3]")
     .pause(500)
-     //Verify Contact Us
+    //Verify Contact Us
     .click("(//a[@href='#/contact_us'])[1]")
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyContactUs.png')
     .pause(2000)
@@ -485,10 +437,18 @@ var signIn =  function(driver)
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyAdminReceivesContactUsEmail.png')
     .pause(2000)
+    .end()
   }
 
 module.exports={
-downloadImages: downloadImages,
+    loginFlikr: moduledownloadImages.loginFlikr,
+    brandConnectMemberImageDownload: moduledownloadImages.brandConnectMemberImageDownload,
+adminAccountLogoDownload: moduledownloadImages.adminAccountLogoDownload,
+memberThemeDownload: moduledownloadImages.memberThemeDownload,
+memberAccountLogoDownload: moduledownloadImages.memberAccountLogoDownload,
+memberLoginLogoDownload: moduledownloadImages.memberLoginLogoDownload,
+memberFooterDownload: moduledownloadImages.memberFooterDownload,
+faviconDownload: moduledownloadImages.faviconDownload,
 signIn: signIn,
 accounts: accounts,
 theme: theme,

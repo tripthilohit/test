@@ -5,39 +5,39 @@
 
   <testsuite name="smoke.groupRegression"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="11" time="336.1" timestamp="Tue, 13 Mar 2018 20:52:51 GMT">
+    tests="11" time="378.6" timestamp="Fri, 23 Mar 2018 15:11:17 GMT">
   
-    <testcase name="downloadList" classname="smoke.groupRegression" time="8.522" assertions="0">
+    <testcase name="downloadList" classname="smoke.groupRegression" time="9.573" assertions="0">
     </testcase>
   
-    <testcase name="signinEmail" classname="smoke.groupRegression" time="18.56" assertions="0">
+    <testcase name="signinEmail" classname="smoke.groupRegression" time="20.04" assertions="0">
     </testcase>
   
-    <testcase name="createGroupMale" classname="smoke.groupRegression" time="25.81" assertions="0">
+    <testcase name="createGroupMale" classname="smoke.groupRegression" time="33.75" assertions="0">
     </testcase>
   
-    <testcase name="createListUploadingCSV" classname="smoke.groupRegression" time="24.37" assertions="0">
+    <testcase name="createListUploadingCSV" classname="smoke.groupRegression" time="30.48" assertions="0">
     </testcase>
   
-    <testcase name="createGroupExcludeState" classname="smoke.groupRegression" time="45.72" assertions="0">
+    <testcase name="createGroupExcludeState" classname="smoke.groupRegression" time="49.69" assertions="0">
     </testcase>
   
-    <testcase name="createGroupCanada" classname="smoke.groupRegression" time="39.49" assertions="0">
+    <testcase name="createGroupCanada" classname="smoke.groupRegression" time="36.11" assertions="0">
     </testcase>
   
-    <testcase name="segmentBySurveyQualifications" classname="smoke.groupRegression" time="35.37" assertions="0">
+    <testcase name="segmentBySurveyQualifications" classname="smoke.groupRegression" time="37.36" assertions="0">
     </testcase>
   
-    <testcase name="segmentBySurveyPastAnswers" classname="smoke.groupRegression" time="38.68" assertions="0">
+    <testcase name="segmentBySurveyPastAnswers" classname="smoke.groupRegression" time="39.57" assertions="0">
     </testcase>
   
-    <testcase name="splitLists" classname="smoke.groupRegression" time="30.60" assertions="0">
+    <testcase name="splitLists" classname="smoke.groupRegression" time="30.91" assertions="0">
     </testcase>
   
-    <testcase name="splitGroup" classname="smoke.groupRegression" time="30.04" assertions="0">
+    <testcase name="splitGroup" classname="smoke.groupRegression" time="35.92" assertions="0">
     </testcase>
   
-    <testcase name="createListAddMembers" classname="smoke.groupRegression" time="38.93" assertions="0">
+    <testcase name="createListAddMembers" classname="smoke.groupRegression" time="55.20" assertions="0">
     </testcase>
   
 

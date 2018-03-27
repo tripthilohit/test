@@ -1,31 +1,155 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="4"
             failures="0"
-            tests="6">
+            tests="31">
 
   <testsuite name="smoke.brandConnectRegression"
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="6" time="149.3" timestamp="Tue, 13 Mar 2018 21:31:48 GMT">
+    errors="4" failures="0" hostname="" id="" package="smoke" skipped="0"
+    tests="31" time="981.1" timestamp="Fri, 23 Mar 2018 14:20:36 GMT">
   
-    <testcase name="signInAdmin3" classname="smoke.brandConnectRegression" time="25.88" assertions="0">
+    <testcase name="downloadImages" classname="smoke.brandConnectRegression" time="64.69" assertions="1">
+
+    
     </testcase>
   
-    <testcase name="createPrivateDiscussion" classname="smoke.brandConnectRegression" time="49.86" assertions="0">
+    <testcase name="signIn" classname="smoke.brandConnectRegression" time="22.01" assertions="0">
     </testcase>
   
-    <testcase name="signinMember4" classname="smoke.brandConnectRegression" time="21.74" assertions="0">
+    <testcase name="createBrandConnectTopic" classname="smoke.brandConnectRegression" time="20.74" assertions="0">
     </testcase>
   
-    <testcase name="verifyPrivateDiscussionMale" classname="smoke.brandConnectRegression" time="16.20" assertions="0">
+    <testcase name="createBrandConnectDiscussion" classname="smoke.brandConnectRegression" time="21.45" assertions="0">
     </testcase>
   
-    <testcase name="signinFemale" classname="smoke.brandConnectRegression" time="19.72" assertions="0">
+    <testcase name="editDiscussion" classname="smoke.brandConnectRegression" time="30.97" assertions="0">
     </testcase>
   
-    <testcase name="verifyPrivateDiscussionFemale" classname="smoke.brandConnectRegression" time="15.85" assertions="0">
+    <testcase name="editTopic" classname="smoke.brandConnectRegression" time="31.66" assertions="0">
+    </testcase>
+  
+    <testcase name="adminCommentReply" classname="smoke.brandConnectRegression" time="27.31" assertions="0">
+    </testcase>
+  
+    <testcase name="memberSignIn" classname="smoke.brandConnectRegression" time="16.50" assertions="0">
+    </testcase>
+  
+    <testcase name="memberBC_Notification" classname="smoke.brandConnectRegression" time="7.438" assertions="0">
+    </testcase>
+  
+    <testcase name="memberCommentReply" classname="smoke.brandConnectRegression" time="32.11" assertions="0">
+    </testcase>
+  
+    <testcase name="memberCommentSorting" classname="smoke.brandConnectRegression" time="208.9" assertions="0">
+    </testcase>
+  
+    <testcase name="enableMemberDiscussion" classname="smoke.brandConnectRegression" time="34.89" assertions="0">
+    </testcase>
+  
+    <testcase name="signinEmail" classname="smoke.brandConnectRegression" time="21.25" assertions="0">
+    </testcase>
+  
+    <testcase name="confirmMemberStartDiscussion" classname="smoke.brandConnectRegression" time="8.579" assertions="0">
+    </testcase>
+  
+    <testcase name="createMemberDiscussion" classname="smoke.brandConnectRegression" time="23.93" assertions="0">
+    </testcase>
+  
+    <testcase name="createFemaleMember" classname="smoke.brandConnectRegression" time="92.65" assertions="0">
+    </testcase>
+  
+    <testcase name="memberDiscussionVisibilityUntilApproved" classname="smoke.brandConnectRegression" time="13.26" assertions="0">
+    </testcase>
+  
+    <testcase name="signInAdmin" classname="smoke.brandConnectRegression" time="18.94" assertions="0">
+    </testcase>
+  
+    <testcase name="approveMemberDiscussion" classname="smoke.brandConnectRegression" time="32.50" assertions="0">
+    </testcase>
+  
+    <testcase name="signinEmailAgain" classname="smoke.brandConnectRegression" time="20.38" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyMemberDiscussionOnApproval" classname="smoke.brandConnectRegression" time="12.96" assertions="0">
+    </testcase>
+  
+    <testcase name="signInAdmin2" classname="smoke.brandConnectRegression" time="17.77" assertions="0">
+    </testcase>
+  
+    <testcase name="hideComment" classname="smoke.brandConnectRegression" time="23.66" assertions="0">
+    </testcase>
+  
+    <testcase name="signinMember3" classname="smoke.brandConnectRegression" time="20.42" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyHideComment" classname="smoke.brandConnectRegression" time="19.88" assertions="0">
+    </testcase>
+  
+    <testcase name="signInAdmin3" classname="smoke.brandConnectRegression" time="16.14" assertions="0">
+    </testcase>
+  
+    <testcase name="createPrivateDiscussion" classname="smoke.brandConnectRegression" time="49.80" assertions="0">
+    </testcase>
+  
+    <testcase name="signinMember4" classname="smoke.brandConnectRegression" time="20.67" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyPrivateDiscussionMale" classname="smoke.brandConnectRegression" time="14.15" assertions="0">
+    </testcase>
+  
+    <testcase name="signinFemale" classname="smoke.brandConnectRegression" time="21.32" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyPrivateDiscussionFemale" classname="smoke.brandConnectRegression" time="14.14" assertions="0">
     </testcase>
   
 
+  
+    <system-err>
+      ERROR: Unable to locate element: &quot;(//a[contains(text(),'Topic Title')])[1]&quot; using: xpath
+    at Object.approveMemberDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:707:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;(//a[contains(text(),'discussion created by a member')])[1]&quot; using: xpath
+    at Object.approveMemberDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:709:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;//label[@class='bconnect-topics-item-config']&quot; using: xpath
+    at Object.approveMemberDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:712:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;//label[@class='bconnect-topics-item-config']/span/a[2]&quot; using: xpath
+    at Object.approveMemberDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:715:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+    </system-err>
   
 
   

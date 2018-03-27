@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuites errors="19"
             failures="0"
             tests="10">
@@ -8,15 +9,31 @@
     tests="10" time="640.2" timestamp="Tue, 27 Mar 2018 11:40:32 GMT">
   
     <testcase name="downloadImages" classname="Smoke.accountsThemeUSersContactAssets" time="107.2" assertions="1">
+=======
+<testsuites errors="4"
+            failures="0"
+            tests="10">
+
+  <testsuite name="smoke.accountsThemeUsersContactAssets"
+    errors="4" failures="0" hostname="" id="" package="smoke" skipped="0"
+    tests="10" time="553.1" timestamp="Thu, 22 Mar 2018 21:05:31 GMT">
+  
+    <testcase name="downloadImages" classname="smoke.accountsThemeUsersContactAssets" time="90.72" assertions="1">
+>>>>>>> 2dacb16
 
     
     </testcase>
   
+<<<<<<< HEAD
     <testcase name="signIn" classname="Smoke.accountsThemeUSersContactAssets" time="26.76" assertions="1">
+=======
+    <testcase name="signIn" classname="smoke.accountsThemeUsersContactAssets" time="25.31" assertions="1">
+>>>>>>> 2dacb16
 
     
     </testcase>
   
+<<<<<<< HEAD
     <testcase name="accounts" classname="Smoke.accountsThemeUSersContactAssets" time="20.42" assertions="0">
     </testcase>
   
@@ -39,11 +56,36 @@
     </testcase>
   
     <testcase name="memberSideVerify" classname="Smoke.accountsThemeUSersContactAssets" time="109.2" assertions="0">
+=======
+    <testcase name="accounts" classname="smoke.accountsThemeUsersContactAssets" time="18.82" assertions="0">
+    </testcase>
+  
+    <testcase name="theme" classname="smoke.accountsThemeUsersContactAssets" time="41.60" assertions="0">
+    </testcase>
+  
+    <testcase name="users" classname="smoke.accountsThemeUsersContactAssets" time="20.71" assertions="0">
+    </testcase>
+  
+    <testcase name="confirmAdminusers" classname="smoke.accountsThemeUsersContactAssets" time="121.2" assertions="0">
+    </testcase>
+  
+    <testcase name="contactInfo" classname="smoke.accountsThemeUsersContactAssets" time="10.72" assertions="0">
+    </testcase>
+  
+    <testcase name="assets" classname="smoke.accountsThemeUsersContactAssets" time="67.90" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyAdminLevelRestrictions" classname="smoke.accountsThemeUsersContactAssets" time="68.57" assertions="0">
+    </testcase>
+  
+    <testcase name="memberSideVerify" classname="smoke.accountsThemeUsersContactAssets" time="87.49" assertions="0">
+>>>>>>> 2dacb16
     </testcase>
   
 
   
     <system-err>
+<<<<<<< HEAD
       ERROR: Unable to locate element: &quot;//img[@alt='blue beach waves']&quot; using: xpath
     at Object.downloadImages (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUSersContactAssets.js:18:6)
     at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
@@ -154,6 +196,19 @@ ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; u
     at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
+=======
+      ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; using: xpath
+    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:290:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+>>>>>>> 2dacb16
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[2]&quot; using: xpath
     at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUSersContactAssets.js:301:6)
     at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
