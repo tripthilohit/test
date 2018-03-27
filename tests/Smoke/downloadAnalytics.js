@@ -1,4 +1,4 @@
-ar downloadImages = function(driver)
+var downloadImages = function(driver)
 {
     driver
 .url("https://burst.shopify.com/")

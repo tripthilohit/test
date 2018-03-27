@@ -307,6 +307,8 @@ var adminMemberHistory = function(driver)
 .pause(2000)
 .click("//div[@class='tabs-buttons']/button")
 .pause(2000)
+
+
 }
 
 
@@ -314,6 +316,6 @@ module.exports={
 
 signIn: modulecreateSurvey.signIn,
 memberTab: memberTab,
-memberFilters: memberFilters
+memberFilters: memberFilters,
 adminMemberHistory: adminMemberHistory
 }

@@ -43,6 +43,8 @@ var generalInfo = function(driver)
   driver
 
 // Upload pic using FB profile( make sure Single click sharing app is been deleted from you FB profile)
+.execute('scrollTo(200,0)')
+.pause(2000)
 .click("(//a[@class='btn btn-facebook-connect btn-md2 btn-block'])[1]")
 .pause(2000)
 .click("//input[@id='email']")
@@ -66,6 +68,7 @@ var generalInfo = function(driver)
 .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileimage.png')
 .pause(2000)
 // Upload a profile pic using Twitter profile( pls make sure Single click sharing app is revoked on twitter profile)
+.execute('scrollTo(200,0)')
 .click("(//a[@class='btn btn-twitter-connect btn-md2 btn-block'])[1]")
 .pause(2000)
 .click("//input[@id='username_or_email']")
@@ -627,24 +630,24 @@ var connectFbAndTw = function(driver)
 }
 
 module.exports={
-downloadImages: downloadImages,
+//downloadImages: downloadImages,
 signinEmail: modulememberSigninEmail.signinEmail, 
 memberProfilePage: memberProfilePage,
 generalInfo: generalInfo,
 personalInfo: personalInfo,
 shippingInfoCa: shippingInfoCa,
 shippingInfoUs: shippingInfoUs,
-//memberHistory:memberHistory,
-//memberChangePassword: memberChangePassword,
-//memberSigninNewPassword: memberSigninNewPassword,
-//memberProfilePage1: memberProfilePage,
-//deactivateAccount: deactivateAccount,
-//signIn: modulecreateSurvey.signIn,
-//adminMember: adminMember,
+memberHistory:memberHistory,
+memberChangePassword: memberChangePassword,
+memberSigninNewPassword: memberSigninNewPassword,
+memberProfilePage1: memberProfilePage,
+deactivateAccount: deactivateAccount,
+signIn: modulecreateSurvey.signIn,
+adminMember: adminMember,
 //signinEmail: modulememberSigninEmail.signinEmail, 
 //memberProfilePage: memberProfilePage,
 //emailAndPassword: emailAndPassword,
-//SigningEmail2: SigningEmail2,
-//memberProfilePage2: memberProfilePage,
-//connectFbAndTw: connectFbAndTw,
+SigningEmail2: SigningEmail2,
+memberProfilePage2: memberProfilePage,
+connectFbAndTw: connectFbAndTw
 }
