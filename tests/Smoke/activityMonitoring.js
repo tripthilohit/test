@@ -325,7 +325,7 @@ var activityMonitoring = function(driver)
   .pause(2000)
   .mouseButtonClick(1)
   .pause(2000)
-
+  .end()
 }
 
 module.exports={

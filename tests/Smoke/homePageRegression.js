@@ -1,36 +1,4 @@
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download Desktop Background Image
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "desktop background")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='pink hearts background']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-    //download Desktop Background Image
-    .url("https://burst.shopify.com/")
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "mobile background")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='abstract phone wallpaper']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
+var moduledownloadImages = require('./downloadImages.js')
 
 var modulecreateSurvey = require('./createSurvey.js')
 
@@ -98,10 +66,10 @@ var homePageTemplate1 = function(driver)
 	.setValue("//textarea[@ng-model='home_page_theme.create_account_with_description']","create account with description create account with description create account with description ")
 	.pause(1000)
 	//Upload Desktop Background Image
-	.setValue("//input[@class='background-field']",driver.globals.userNames.path + "pink-hearts-background_925x.jpg")
+	.setValue("//input[@class='background-field']",driver.globals.userNames.path + "41056929091_a713d349c0_o.png")
 	.pause(4000)
 	//Upload Desktop Mobile Background Image
-	.setValue("//input[@class='mobile_background-field']",driver.globals.userNames.path + "abstract-phone-wallpaper_925x.jpg")
+	.setValue("//input[@class='mobile_background-field']",driver.globals.userNames.path + "41056931631_537265ebe1_o.png")
 	.pause(4000)
 	//change the font style
 	.click("//label[@for='radio_basic_helvetica']/span")
@@ -440,32 +408,19 @@ var verifyHideFunctionMobile = function(driver)
     var handle = result.value[1];
     this.switchWindow(handle);})
     .pause(2000)
-    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileSplashHeadline.png')
+    //close notifications
+    .click("(//i[@class='material-icons notification-cancel'])[1]")
+    .pause(500)
+    .click("(//i[@class='material-icons notification-cancel'])[2]")
+    .pause(500)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyHideMobileSplashHeadline.png')
     .pause(2000)
-    .click("(//a[@class='btn login themed-button'])[2]")
-    .pause(1000)
-    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileLoginHeadlineDescription.png')
-    .pause(2000)
-    .click("(//div[contains(text(),'Email')])[6]")
-    .pause(2000)
-    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileLoginWithHeadlineHeadline.png')
-    .pause(2000)
-    .click("(//a[contains(text(),'Create an Account')])[6]")
-    .pause(2000)
-    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileCreateAccountHeadlineHeadline.png')
-    .pause(2000)
-    .click("(//div[contains(text(),'Email')])[6]")
-    .pause(2000)
-    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/hideMobileCreateAccountWithHeadlineHeadline.png')
-    .pause(2000)
-
+    .end()
 }
 module.exports =
 {
-	
-	//downloadImages:downloadImages,
+	downloadImages:downloadImages,
 	signInAdmin: modulecreateSurvey.signIn,
-	/*
 homePageTemplate1: homePageTemplate1,
 verifyMemberSideT1: verifyMemberSideT1,
 signInAdmin2: modulecreateSurvey.signIn,
@@ -476,8 +431,7 @@ homePageTemplate3: homePageTemplate3,
 verifyMemberSideT3: verifyMemberSideT3,
 signInAdmin4: modulecreateSurvey.signIn,
 previewDesktopMobile: previewDesktopMobile,
-verifyBeforeSave: verifyBeforeSave
-*/
+verifyBeforeSave: verifyBeforeSave,
 hideFunctionMobile: hideFunctionMobile,
 verifyHideFunctionMobile: verifyHideFunctionMobile
 }

@@ -293,6 +293,7 @@ var downloadAnalyticsPreview = function(driver)
   .pause(2000)
   .execute('scrollTo(0,6000)')
   .pause(2000)
+  .end()
  
 }
 

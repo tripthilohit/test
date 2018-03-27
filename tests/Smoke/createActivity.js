@@ -1,28 +1,7 @@
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download activity badge
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='blue beach waves']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
+var moduledownloadImages = require('./downloadImages.js')
 
-module.exports = {
-    downloadImages: downloadImages,
-  'Creating an activity' : function(driver)
-  {
+var createActivity = function(driver)
+{
     driver
     .url(driver.globals.userNames.adminURL)
     .windowMaximize("current")
@@ -80,7 +59,7 @@ module.exports = {
     .pause(2000)
     .setValue("//sml-medium-editor[@ng-model='activity.page.details']/div/div[1]", "Description of the product")
     .pause(2000)
-    .setValue("//input[@class='js-description-image-field']",  driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@class='js-description-image-field']",  driver.globals.userNames.path + "26178156097_45d2e82dc7_o.jpg")
     .pause(4000)
     .click("//input[@id='switch_cb_activity.page.show_content_url']")
     .pause(2000)
@@ -96,7 +75,7 @@ module.exports = {
     .pause(2000)
     .click("//input[@id='switch_cb_activity.show_badge']")
     .pause(2000)
-    .setValue("//input[@class='js-badge-image-field']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@class='js-badge-image-field']", driver.globals.userNames.path + "26178156097_45d2e82dc7_o.jpg")
     .pause(2000)
     .click("//textarea[@ng-model='activity.badge.name']")
     .pause(2000)
@@ -187,7 +166,7 @@ module.exports = {
     .pause(2000)
     .setValue("//input[@ng-model='activity.pinterest.seed_url']", "https://www.socialmedialink.com/")
     .pause(2000)
-    .setValue("//input[@class='js-pinterest-image']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@class='js-pinterest-image']", driver.globals.userNames.path + "27177269308_6c5e111e1a_o.jpg")
     .pause(4000)
     .click("//textarea[@ng-model='activity.pinterest.suggested_phrase']")
     .pause(3000)
@@ -285,8 +264,12 @@ module.exports = {
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/missionLogicSaved.png')
     .assert.visible("//button[@class='btn btn-default pull-right test-hub-logic-save']")
     .pause(5000)
-  }
-
-
+    .end()
+}
+module.exports = {
+    loginFlikr: moduledownloadImages.loginFlikr,
+    activityBadgeDownload: moduledownloadImages.activityBadgeDownload,
+    pinterestDownload: moduledownloadImages.pinterestDownload,
+  createActivity: createActivity
 
 }

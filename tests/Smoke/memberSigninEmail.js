@@ -26,6 +26,7 @@
     .pause(2000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginConfirm.png')
     .pause(2000)
+    .end()
 }
 module.exports = {
   

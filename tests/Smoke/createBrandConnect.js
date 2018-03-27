@@ -1,23 +1,5 @@
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download activity badge
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='blue beach waves']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
+var moduledownloadImages = require('./downloadImages.js')
+
 var signIn =  function(driver)
   {
     driver
@@ -94,7 +76,7 @@ var createBrandConnectTopic = function(driver)
     .click("//a[@href='/brand_connect/topics/new']")
     .pause(3000)
     //Upload brand connect topic image
-    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("//input[@data-attachment='TopicPicture']", driver.globals.userNames.path + "26178156117_66bec49a72_o.jpg")
     //.setValue("//input[@type='file']", 'https://s3.amazonaws.com/sml-demo/uploads/nightwatch/brandConnectMemberImage.jpeg')
   //.setValue("//input[@type='file']", "s3.amazonaws.com/sml-demo/uploads/nightwatch/brandConnectMemberImage.jpeg")
     .pause(2000)
@@ -130,11 +112,13 @@ var createBrandConnectDiscussion = function(driver)
     .pause(3000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyBrandConnectCreation.png')
     .pause(1000)
+    .end()
 }
 module.exports={
-    downloadImages: downloadImages,
+    loginFlikr: moduledownloadImages.loginFlikr,
+    brandConnectMemberImageDownload: moduledownloadImages.brandConnectMemberImageDownload,
   signIn: signIn,
-  firstSignin: firstSignin,
+  //firstSignin: firstSignin,
 createBrandConnectTopic: createBrandConnectTopic,
 createBrandConnectDiscussion: createBrandConnectDiscussion
 }
